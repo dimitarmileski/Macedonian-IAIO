@@ -95,7 +95,7 @@
             <div class="panel-text">
               Local competition in <strong>Skopje</strong> to select the team.
               <div class="panel-text">
-              <strong>20 February 2026</strong><br />
+              <strong>20 January 2026</strong><br />
               Skopje, North Macedonia
             </div>
             </div>
@@ -109,6 +109,42 @@
           </div>
 
           
+        </div>
+      </div>
+    </section>
+
+    <section id="previous-olympiads" class="section" aria-label="Previous AI Olympiads">
+      <div class="container">
+        <div class="section-head">
+          <h2>Previous AI Olympiads</h2>
+          <p class="muted">Gallery from recent events.</p>
+        </div>
+
+        <div class="gallery" aria-label="Previous AI Olympiads gallery">
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/ioai-event.jpeg" alt="International AI Olympiad (IAIO)" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/ioai-event2.jpeg" alt="International AI Olympiad (IAIO)" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/IOAI-2-24.jpeg" alt="International Olympiad in AI (IOAI)" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/IOAI-3-24.jpeg" alt="International Olympiad in AI (IOAI)"  loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+           <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/IOAI-4-24.jpeg" alt="International Olympiad in AI (IOAI)"  loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+           <figure class="gallery-item">
+           <img class="gallery-img" src="assets/img/ceoai.jpeg" alt="Central European Olympiad in Artificial Intelligence (CEOAI)"  loading="lazy" decoding="async" />
+           <figcaption class="gallery-caption"></figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -187,7 +223,7 @@
             </div>
           </li>
           <li class="step">
-            <div class="step-title">Get to Skopje IAIO competition  <strong>20 February 2026</strong> 
+            <div class="step-title">Get to Skopje IAIO competition  <strong>20 January 2026</strong> 
               Skopje, North Macedonia</div>
             <div class="step-text">Compete locally to earn selection for the international team.</div>
           </li>
@@ -245,6 +281,41 @@
         </div>
       </div>
     </section>
+
+    <section id="other-olympiads" class="section alt" aria-label="Other AI Olympiads">
+      <div class="container">
+        <div class="section-head">
+          <h2>Other AI Olympiads</h2>
+          <p class="muted">Upcoming international events in 2026.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="panel">
+            <div class="panel-title">Central European Olympiad in Artificial Intelligence</div>
+            <div class="panel-text">
+              <a class="iaio-strip-logo" href="https://ceoai-official.org/" target="_blank" rel="noreferrer">
+                <img src="assets/img/ceoai-logo.png" alt="Central European Olympiad in Artificial Intelligence (CEOAI)" loading="lazy" decoding="async" />
+              </a>
+              <a href="https://ceoai-official.org/" target="_blank" rel="noreferrer">ceoai-official.org</a><br />
+              Cluj-Napoca, Romania<br />
+              <strong>14–19 July 2026</strong>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-title">3rd International Olympiad in AI (IOAI)</div>
+            <div class="panel-text">
+              <a class="iaio-strip-logo" href="https://ioai-official.org/" target="_blank" rel="noreferrer">
+                <img src="assets/img/IOAI-logo.png" alt="International Olympiad in AI (IOAI)" loading="lazy" decoding="async" />
+              </a>
+              <a href="https://ioai-official.org/" target="_blank" rel="noreferrer">ioai-official.org</a><br />
+              Abu Dhabi, United Arab Emirates<br />
+              <strong>2–8 August 2026</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -265,7 +336,7 @@
       </div>
       <div class="footer-right">
         <a class="footer-link" href="https://github.com/dimitarmileski/MIG-AI-O" target="_blank" rel="noreferrer">GitHub repo</a>
-        <span class="muted">Updated: 18 Dec 2025</span>
+        <span class="muted">Updated: 24 Dec 2025</span>
       </div>
     </div>
   </footer>
@@ -273,33 +344,51 @@
   <script>
     (() => {
       const lazyIframes = Array.from(document.querySelectorAll('iframe.lazy-iframe[data-src]'));
-      if (lazyIframes.length === 0) return;
 
-      const loadIframe = (iframe) => {
-        if (!iframe || iframe.dataset.loaded === '1') return;
-        const src = iframe.dataset.src;
-        if (!src) return;
-        iframe.src = src;
-        iframe.dataset.loaded = '1';
-      };
+      if (lazyIframes.length > 0) {
+        const loadIframe = (iframe) => {
+          if (!iframe || iframe.dataset.loaded === '1') return;
+          const src = iframe.dataset.src;
+          if (!src) return;
+          iframe.src = src;
+          iframe.dataset.loaded = '1';
+        };
 
-      if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries, obs) => {
-          for (const entry of entries) {
-            if (!entry.isIntersecting) continue;
-            const iframe = entry.target;
-            loadIframe(iframe);
-            obs.unobserve(iframe);
-          }
-        }, {
-          root: null,
-          rootMargin: '200px 0px',
-          threshold: 0.01
-        });
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries, obs) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              const iframe = entry.target;
+              loadIframe(iframe);
+              obs.unobserve(iframe);
+            }
+          }, {
+            root: null,
+            rootMargin: '200px 0px',
+            threshold: 0.01
+          });
 
-        lazyIframes.forEach((iframe) => observer.observe(iframe));
-      } else {
-        lazyIframes.forEach(loadIframe);
+          lazyIframes.forEach((iframe) => observer.observe(iframe));
+        } else {
+          lazyIframes.forEach(loadIframe);
+        }
+      }
+
+      const galleryFigures = Array.from(document.querySelectorAll('.gallery-item'));
+      for (const figure of galleryFigures) {
+        const img = figure.querySelector('img');
+        if (!img) continue;
+
+        let caption = figure.querySelector('figcaption');
+        if (!caption) {
+          caption = document.createElement('figcaption');
+          caption.className = 'gallery-caption';
+          figure.appendChild(caption);
+        }
+
+        const text = (img.getAttribute('alt') || '').trim();
+        caption.textContent = text;
+        if (!text) caption.style.display = 'none';
       }
     })();
   </script>
