@@ -325,6 +325,13 @@ h1{
   background: rgba(255,255,255,.02);
 }
 
+#mk-iaio-2026 .gallery-caption{ display: none; }
+
+.gallery-more{ margin-top: 12px; }
+.gallery-more-summary{ list-style: none; cursor: pointer; user-select: none; }
+.gallery-more-summary::-webkit-details-marker{ display: none; }
+.gallery-more[open] .gallery-more-summary{ margin-bottom: 12px; }
+
 .leaderboard{
   margin-top: 18px;
   border-radius: var(--radius);
