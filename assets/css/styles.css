@@ -330,7 +330,7 @@ h1{
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: rgba(255,255,255,.03);
-  overflow: hidden;
+  overflow: auto;
 }
 
 .leaderboard-table{
@@ -353,6 +353,52 @@ h1{
 }
 
 .leaderboard-table tbody td{ color: var(--muted); }
+
+.leaderboard-table th:nth-child(1),
+.leaderboard-table td:nth-child(1),
+.leaderboard-table th:nth-child(6),
+.leaderboard-table td:nth-child(6){
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.award-badge{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  color: rgba(255,255,255,.86);
+  font-weight: 900;
+  letter-spacing: .2px;
+  white-space: nowrap;
+}
+
+.award-gold{
+  border-color: rgba(255,210,0,.45);
+  background: rgba(255,210,0,.12);
+  color: rgba(255,240,190,.95);
+}
+
+.award-silver{
+  border-color: rgba(220,230,255,.35);
+  background: rgba(220,230,255,.10);
+  color: rgba(245,248,255,.92);
+}
+
+.award-bronze{
+  border-color: rgba(210,120,60,.38);
+  background: rgba(210,120,60,.12);
+  color: rgba(255,235,225,.92);
+}
+
+.award-mention{
+  border-color: rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.78);
+}
 
 .leaderboard-tba{
   text-align: center;
