@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="mk" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#d20000" />
+  <title>Претходни изданија — Олимпијади по вештачка интелигенција</title>
+  <meta name="description" content="Преглед на претходните изданија на олимпијадите по вештачка интелигенција и фото галерија од настаните." />
+
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('iaio_theme');
+        if (t === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch(e){}
+    })();
+  </script>
+
+  <link rel="icon" href="assets/img/logo.png" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip_to_content">Прескокни до содржина</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" style="text-decoration: none;">
+        <img class="brand-mark" src="assets/img/logo.png" alt="Macedonian Olympiad of Artificial Intelligence logo" width="44" height="44" />
+        <div class="brand-text">
+          <div class="brand-title" data-i18n="brand_title">MOAI - Македонска олимпијада по Вештачка интелигенција</div>
+        </div>
+      </a>
+
+      <div class="header-right-group">
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" data-i18n="nav_home">Почетна</a>
+          
+          <a href="resources.html" data-i18n="nav_resources">Ресурси</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" data-i18n-html="nav_editions">
+              Изданија
+              <svg class="dropdown-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="moai2027.html" class="nav-dropdown-item">
+                <span>MOAI 2027</span>
+                <span class="nav-dropdown-badge">2027</span>
+              </a>
+              <a href="mkiaio.html" class="nav-dropdown-item">
+                <span>MOAI 2026</span>
+                <span class="nav-dropdown-badge">2026</span>
+              </a>
+
+              <div class="nav-dropdown-divider"></div>
+
+              <div class="nav-dropdown-sub">
+                <div class="nav-dropdown-sub-btn">
+                  <span data-i18n="nav_international">Меѓународни</span>
+                  <svg class="sub-chevron" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+                <div class="nav-dropdown-sub-menu">
+                  <a href="iaio2026.html" class="nav-dropdown-item">
+                    <span>IAIO 2026</span>
+                    <span class="nav-dropdown-badge badge-intl">Љубљана</span>
+                  </a>
+                  <a href="euroai2026.html" class="nav-dropdown-item">
+                    <span>EUROAI 2026</span>
+                    <span class="nav-dropdown-badge badge-intl">Клуж</span>
+                  </a>
+                  <div class="nav-dropdown-divider"></div>
+                  <a href="previous-editions.html" class="nav-dropdown-item active">
+                    <span data-i18n="nav_prev_editions">Претходни изданија</span>
+                    <span class="nav-dropdown-badge badge-prev">Архива</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-controls">
+          <div class="lang-selector-wrap">
+            <select id="lang-select" class="lang-select" aria-label="Избор на јазик / Select language">
+              <option value="mk" selected>🇲🇰 Македонски</option>
+              <option value="en">🇬🇧 English</option>
+            </select>
+          </div>
+
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Промени тема" title="Промени тема / Toggle theme">
+            <svg class="theme-toggle-icon icon-moon" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-toggle-icon icon-sun" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flag-stripe" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="edition-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html" data-i18n="breadcrumb_home">Почетна</a>
+          <span class="breadcrumb-separator">/</span>
+          <span data-i18n="breadcrumb_editions">Изданија</span>
+          <span class="breadcrumb-separator">/</span>
+          <span class="muted" data-i18n="breadcrumb_prev">Претходни изданија</span>
+        </nav>
+
+        <div class="edition-badge" data-i18n="edition_badge_text">🏛️ Архива на олимпијади</div>
+        <h1 data-i18n="edition_hero_title">Претходни изданија и олимпијади по ВИ</h1>
+        <p class="lead" data-i18n-html="edition_hero_lead">
+          Архива и преглед на меѓународните и националните олимпијади по вештачка интелигенција, официјални портали и фото галерија од изминатите настани.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 1: Олимпијади по ВИ -->
+    <section id="other-olympiads" class="section alt" aria-label="Other AI Olympiads">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="other_olympiads_title">Олимпијади по ВИ</h2>
+          <p class="muted" data-i18n="other_olympiads_subtitle">Преглед на официјалните светски и европски олимпијади.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="panel">
+            <div class="panel-title" data-i18n="other_iaio_title">Меѓународна олимпијада по вештачка интелигенција (IAIO)</div>
+            <div class="panel-text">
+              <a class="iaio-strip-logo" href="https://www.iaio-official.org/" target="_blank" rel="noreferrer">
+                <img src="assets/img/IAIO-2025-logo-divi.png" alt="International AI Olympiad (IAIO)" loading="lazy" decoding="async" />
+              </a>
+              <div class="panel-site-link">
+                <a href="https://www.iaio-official.org/" target="_blank" rel="noreferrer">iaio-official.org</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-title" data-i18n="other_ceoai_title">Централно-европска олимпијада по вештачка интелигенција</div>
+            <div class="panel-text">
+              <a class="iaio-strip-logo" href="https://ceoai-official.org/" target="_blank" rel="noreferrer">
+                <img src="assets/img/ceoai-logo.png" alt="Central European Olympiad in Artificial Intelligence (CEOAI)" loading="lazy" decoding="async" />
+              </a>
+              <div class="panel-site-link">
+                <a href="https://ceoai-official.org/" target="_blank" rel="noreferrer">ceoai-official.org</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-title" data-i18n="other_ioai_title">Меѓународна олимпијада по ВИ (IOAI)</div>
+            <div class="panel-text">
+              <a class="iaio-strip-logo" href="https://ioai-official.org/" target="_blank" rel="noreferrer">
+                <img src="assets/img/IOAI-logo.png" alt="International Olympiad in AI (IOAI)" loading="lazy" decoding="async" />
+              </a>
+              <div class="panel-site-link">
+                <a href="https://ioai-official.org/" target="_blank" rel="noreferrer">ioai-official.org</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Претходни олимпијади по ВИ (Gallery) -->
+    <section id="previous-olympiads" class="section" aria-label="Previous AI Olympiads">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="prev_olympiads_title">Претходни олимпијади по ВИ</h2>
+          <p class="muted" data-i18n="prev_olympiads_subtitle">Галерија од изминати настани.</p>
+        </div>
+
+        <div class="gallery" aria-label="Previous AI Olympiads gallery">
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/ioai-event.jpeg" alt="International AI Olympiad (IAIO)" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/ioai-event2.jpeg" alt="International AI Olympiad (IAIO)" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/IOAI-2-24.jpeg" alt="International Olympiad in AI (IOAI)" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/IOAI-3-24.jpeg" alt="International Olympiad in AI (IOAI)" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/IOAI-4-24.jpeg" alt="International Olympiad in AI (IOAI)" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="gallery-img" src="assets/img/ceoai.jpeg" alt="Central European Olympiad in Artificial Intelligence (CEOAI)" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption"></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img class="footer-mark" src="assets/img/logo.png" alt="" width="36" height="36" />
+        <div>
+          <div class="footer-title" data-i18n="brand_title">MOAI - Македонска олимпијада по Вештачка интелигенција</div>
+        </div>
+      </div>
+      <div class="footer-logos" aria-label="Partners">
+        <a class="footer-logo" href="https://mendo.mk/Welcome.do" target="_blank" rel="noreferrer">
+          <img src="assets/img/mendo.png" alt="MENDO" loading="lazy" decoding="async" />
+        </a>
+        <a class="footer-logo" href="https://cs.org.mk/" target="_blank" rel="noreferrer">
+          <img src="assets/img/zim.png" alt="ZIM" loading="lazy" decoding="async" />
+        </a>
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="https://github.com/dimitarmileski/MIG-AI-O" target="_blank" rel="noreferrer" data-i18n="footer_github">GitHub репозиториум</a>
+        <span class="muted" data-i18n="footer_updated">Ажурирано: 06 октомври 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Врати се на врв" title="Врати се на врв">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script>
+    (() => {
+      const translations = {
+        mk: {
+          page_title: "Претходни изданија — Олимпијади по вештачка интелигенција",
+          page_desc: "Преглед на претходните изданија на олимпијадите по вештачка интелигенција и фото галерија од настаните.",
+          skip_to_content: "Прескокни до содржина",
+          brand_title: "MOAI - Македонска олимпијада по Вештачка интелигенција",
+          nav_home: "Почетна",
+          nav_editions: "Изданија <svg class=\"dropdown-chevron\" viewBox=\"0 0 24 24\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>",
+          nav_international: "Меѓународни",
+          nav_prev_editions: "Претходни изданија",
+          nav_resources: "Ресурси",
+          breadcrumb_home: "Почетна",
+          breadcrumb_editions: "Изданија",
+          breadcrumb_prev: "Претходни изданија",
+          edition_badge_text: "🏛️ Архива на олимпијади",
+          edition_hero_title: "Претходни изданија и олимпијади по ВИ",
+          edition_hero_lead: "Архива и преглед на меѓународните и националните олимпијади по вештачка интелигенција, официјални портали и фото галерија од изминатите настани.",
+          other_olympiads_title: "Олимпијади по ВИ",
+          other_olympiads_subtitle: "Преглед на официјалните светски и европски олимпијади.",
+          other_iaio_title: "Меѓународна олимпијада по вештачка интелигенција (IAIO)",
+          other_ceoai_title: "Централно-европска олимпијада по вештачка интелигенција",
+          other_ioai_title: "Меѓународна олимпијада по ВИ (IOAI)",
+          prev_olympiads_title: "Претходни олимпијади по ВИ",
+          prev_olympiads_subtitle: "Галерија од изминати настани.",
+          footer_github: "GitHub репозиториум",
+          footer_updated: "Ажурирано: 06 октомври 2026",
+          back_to_top: "Врати се на врв"
+        },
+        en: {
+          page_title: "Previous Editions — Artificial Intelligence Olympiads",
+          page_desc: "Overview of previous artificial intelligence olympiad editions and photo gallery.",
+          skip_to_content: "Skip to content",
+          brand_title: "MOAI - Macedonian Olympiad of Artificial Intelligence",
+          nav_home: "Home",
+          nav_editions: "Editions <svg class=\"dropdown-chevron\" viewBox=\"0 0 24 24\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>",
+          nav_international: "International",
+          nav_prev_editions: "Previous Editions",
+          nav_resources: "Resources",
+          breadcrumb_home: "Home",
+          breadcrumb_editions: "Editions",
+          breadcrumb_prev: "Previous Editions",
+          edition_badge_text: "🏛️ Olympiad Archive",
+          edition_hero_title: "Previous Editions & AI Olympiads",
+          edition_hero_lead: "Archive and overview of international and national AI olympiads, official links, and photo galleries from past events.",
+          other_olympiads_title: "AI Olympiads",
+          other_olympiads_subtitle: "Overview of official global and European olympiads.",
+          other_iaio_title: "International AI Olympiad (IAIO)",
+          other_ceoai_title: "Central European Olympiad in Artificial Intelligence",
+          other_ioai_title: "International Olympiad in AI (IOAI)",
+          prev_olympiads_title: "Previous AI Olympiads",
+          prev_olympiads_subtitle: "Gallery from recent events.",
+          footer_github: "GitHub repo",
+          footer_updated: "Updated: 06 October 2026",
+          back_to_top: "Back to top"
+        }
+      };
+
+      const langSelect = document.getElementById('lang-select');
+      const backToTopBtn = document.getElementById('back-to-top');
+
+      function setLanguage(lang) {
+        const dict = translations[lang] || translations.mk;
+        document.documentElement.lang = lang;
+
+        if (dict.page_title) document.title = dict.page_title;
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && dict.page_desc) metaDesc.setAttribute('content', dict.page_desc);
+
+        if (backToTopBtn && dict.back_to_top) {
+          backToTopBtn.setAttribute('title', dict.back_to_top);
+          backToTopBtn.setAttribute('aria-label', dict.back_to_top);
+        }
+
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key] !== undefined) el.textContent = dict[key];
+        });
+
+        document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+          const key = el.getAttribute('data-i18n-html');
+          if (dict[key] !== undefined) el.innerHTML = dict[key];
+        });
+
+        if (langSelect && langSelect.value !== lang) {
+          langSelect.value = lang;
+        }
+
+        try {
+          localStorage.setItem('iaio_preferred_lang', lang);
+        } catch(e){}
+      }
+
+      let initialLang = 'mk';
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get('lang');
+        const storedLang = localStorage.getItem('iaio_preferred_lang');
+        if (langParam && (langParam === 'mk' || langParam === 'en')) {
+          initialLang = langParam;
+        } else if (storedLang && (storedLang === 'mk' || storedLang === 'en')) {
+          initialLang = storedLang;
+        }
+      } catch(e){}
+
+      if (langSelect) {
+        langSelect.addEventListener('change', (e) => {
+          setLanguage(e.target.value);
+        });
+      }
+
+      setLanguage(initialLang);
+
+      const themeToggle = document.getElementById('theme-toggle');
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        try {
+          localStorage.setItem('iaio_theme', theme);
+        } catch(e){}
+      }
+
+      let initialTheme = 'light';
+      try {
+        const storedTheme = localStorage.getItem('iaio_theme');
+        if (storedTheme === 'dark' || storedTheme === 'light') {
+          initialTheme = storedTheme;
+        }
+      } catch(e){}
+
+      setTheme(initialTheme);
+
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          setTheme(newTheme);
+        });
+      }
+
+      // Back to top button
+      if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.add('is-visible');
+          } else {
+            backToTopBtn.classList.remove('is-visible');
+          }
+        }, { passive: true });
+
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // Gallery captions
+      const galleryFigures = Array.from(document.querySelectorAll('.gallery-item'));
+      for (const figure of galleryFigures) {
+        const img = figure.querySelector('img');
+        if (!img) continue;
+
+        let caption = figure.querySelector('figcaption');
+        if (!caption) {
+          caption = document.createElement('figcaption');
+          caption.className = 'gallery-caption';
+          figure.appendChild(caption);
+        }
+
+        const text = (img.getAttribute('alt') || '').trim();
+        caption.textContent = text;
+        if (!text) caption.style.display = 'none';
+      }
+    })();
+  </script>
+</body>
+</html>

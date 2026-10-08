@@ -1,0 +1,1660 @@
+<!doctype html>
+<html lang="mk" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#d20000" />
+  <title>Ресурси — Македонска олимпијада по Вештачка интелигенција</title>
+  <meta name="description" content="Ресурси, наставна програма (Syllabus), видео предавања, тестови и материјали за подготовка за олимпијадите по вештачка интелигенција." />
+
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('iaio_theme');
+        if (t === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch(e){}
+    })();
+  </script>
+
+  <link rel="icon" href="assets/img/logo.png" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip_to_content">Прескокни до содржина</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" style="text-decoration: none;">
+        <img class="brand-mark" src="assets/img/logo.png" alt="Macedonian Olympiad of Artificial Intelligence logo" width="44" height="44" />
+        <div class="brand-text">
+          <div class="brand-title" data-i18n="brand_title">MOAI - Македонска олимпијада по Вештачка интелигенција</div>
+        </div>
+      </a>
+
+      <div class="header-right-group">
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" data-i18n="nav_home">Почетна</a>
+          
+          <a href="resources.html" class="active" data-i18n="nav_resources">Ресурси</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" data-i18n-html="nav_editions">
+              Изданија
+              <svg class="dropdown-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="moai2027.html" class="nav-dropdown-item">
+                <span>MOAI 2027</span>
+                <span class="nav-dropdown-badge">2027</span>
+              </a>
+              <a href="mkiaio.html" class="nav-dropdown-item">
+                <span>MOAI 2026</span>
+                <span class="nav-dropdown-badge">2026</span>
+              </a>
+
+              <div class="nav-dropdown-divider"></div>
+
+              <div class="nav-dropdown-sub">
+                <div class="nav-dropdown-sub-btn">
+                  <span data-i18n="nav_international">Меѓународни</span>
+                  <svg class="sub-chevron" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+                <div class="nav-dropdown-sub-menu">
+                  <a href="iaio2026.html" class="nav-dropdown-item">
+                    <span>IAIO 2026</span>
+                    <span class="nav-dropdown-badge badge-intl">Љубљана</span>
+                  </a>
+                  <a href="euroai2026.html" class="nav-dropdown-item">
+                    <span>EUROAI 2026</span>
+                    <span class="nav-dropdown-badge badge-intl">Клуж</span>
+                  </a>
+                  <div class="nav-dropdown-divider"></div>
+                  <a href="previous-editions.html" class="nav-dropdown-item">
+                    <span data-i18n="nav_prev_editions">Претходни изданија</span>
+                    <span class="nav-dropdown-badge badge-prev">Архива</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-controls">
+          <div class="lang-selector-wrap">
+            <select id="lang-select" class="lang-select" aria-label="Избор на јазик / Select language">
+              <option value="mk" selected>🇲🇰 Македонски</option>
+              <option value="en">🇬🇧 English</option>
+            </select>
+          </div>
+
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Промени тема" title="Промени тема / Toggle theme">
+            <svg class="theme-toggle-icon icon-moon" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-toggle-icon icon-sun" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flag-stripe" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="edition-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html" data-i18n="breadcrumb_home">Почетна</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="muted" data-i18n="breadcrumb_resources">Ресурси</span>
+        </nav>
+
+        <div class="edition-badge" data-i18n="resources_badge_text">📚 Материјали и подготовки</div>
+        <h1 data-i18n="resources_hero_title">Ресурси за MOAI</h1>
+        <p class="lead" data-i18n-html="resources_hero_lead">
+          Комплетна наставна програма (Syllabus), видео предавања, вебинари, официјални тестови и материјали за подготовка за олимпијадите по вештачка интелигенција.
+        </p>
+
+        <div class="hero-actions" style="margin: 16px 0 24px;">
+          <a href="#syllabus" class="btn btn-syllabus">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span data-i18n="hero_syllabus_btn">Наставна програма (Syllabus)</span>
+            <span style="opacity: 0.75; font-size: 14px;">&darr;</span>
+          </a>
+        </div>
+
+        <!-- 4-Step Preparation Pathway / Flowchart -->
+        <div class="prep-flowchart" aria-label="Learning pathway">
+          <div class="flowchart-grid">
+            <!-- Step 1 -->
+            <a href="#webinars" class="flow-card">
+              <div class="flow-card-head">
+                <span class="flow-card-num">1</span>
+                <span class="flow-card-icon">🎥</span>
+              </div>
+              <div class="flow-card-title" data-i18n="flow_step1_title">1. Видео предавања</div>
+              <div class="flow-card-desc" data-i18n="flow_step1_desc">Снимени сесии и предавања од светски професори за секоја тема.</div>
+              <div class="flow-card-action"><span data-i18n="flow_step1_btn">Погледни предавања</span> &darr;</div>
+            </a>
+
+            <!-- Arrow 1 -->
+            <div class="flow-arrow-sep" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+
+            <!-- Step 2 -->
+            <a href="#book" class="flow-card">
+              <div class="flow-card-head">
+                <span class="flow-card-num">2</span>
+                <span class="flow-card-icon">📘</span>
+              </div>
+              <div class="flow-card-title" data-i18n="flow_step2_title">2. Книга</div>
+              <div class="flow-card-desc" data-i18n="flow_step2_desc">Книга за обука и подготовка (Eljakim Schrijvers).</div>
+              <div class="flow-card-action"><span data-i18n="flow_step2_btn">Отвори книга</span> &darr;</div>
+            </a>
+
+            <!-- Arrow 2 -->
+            <div class="flow-arrow-sep" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+
+            <!-- Step 3 -->
+            <a href="#tests" class="flow-card">
+              <div class="flow-card-head">
+                <span class="flow-card-num">3</span>
+                <span class="flow-card-icon">📝</span>
+              </div>
+              <div class="flow-card-title" data-i18n="flow_step3_title">3. Теоретски задачи</div>
+              <div class="flow-card-desc" data-i18n="flow_step3_desc">Задачи од научната рунда за вежбање.</div>
+              <div class="flow-card-action"><span data-i18n="flow_step3_btn">Отвори задачи</span> &darr;</div>
+            </a>
+
+            <!-- Arrow 3 -->
+            <div class="flow-arrow-sep" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+
+            <!-- Step 4 -->
+            <a href="#resources" class="flow-card">
+              <div class="flow-card-head">
+                <span class="flow-card-num">4</span>
+                <span class="flow-card-icon">💻</span>
+              </div>
+              <div class="flow-card-title" data-i18n="flow_step4_title">4. Практични задачи</div>
+              <div class="flow-card-desc" data-i18n="flow_step4_desc">Работа со реални податочни сетови и натпревари.</div>
+              <div class="flow-card-action"><span data-i18n="flow_step4_btn">Истражи платформи</span> &darr;</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Syllabus Section -->
+    <section id="syllabus" class="section alt" aria-label="Syllabus">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="syllabus_title">Наставна програма и теми (Syllabus)</h2>
+          <p class="muted" data-i18n="syllabus_subtitle">Преглед на клучните области и наставни модули според меѓународните стандарди на олимпијадите по ВИ.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Topic 1 -->
+          <div class="card card-expandable" id="topic-1" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-1">
+            <div class="card-kicker" data-i18n="syl_mod1_kicker">Тема 1</div>
+            <div class="card-title" data-i18n="syl_mod1_title">AI терминологија</div>
+            <div class="card-text" data-i18n="syl_mod1_text">Дефиниции, основни поими, историски развој и фундаментални концепти во вештачката интелигенција.</div>
+            <div class="card-details-body" id="topic-details-1" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod1_sub1">Основи на ВИ</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod1_item1">Дефиниции за вештачка интелигенција и интелигентни агенти</li>
+                  <li data-i18n="syl_mod1_item2">Тјурингов тест и историски преглед</li>
+                  <li data-i18n="syl_mod1_item3">Симболичка наспроти конекционистичка ВИ</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 2 -->
+          <div class="card card-expandable" id="topic-2" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-2">
+            <div class="card-kicker" data-i18n="syl_mod2_kicker">Тема 2</div>
+            <div class="card-title" data-i18n="syl_mod2_title">Општествено влијание на ВИ (ethics, fairness)</div>
+            <div class="card-text" data-i18n="syl_mod2_text">Етички принципи, правичност на моделите, приватност, справување со пристрасност (bias) и општествена одговорност.</div>
+            <div class="card-details-body" id="topic-details-2" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod2_sub1">Ethics & Fairness</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod2_item1">Етички насоки и одговорно користење на ВИ</li>
+                  <li data-i18n="syl_mod2_item2">Откривање и ублажување на пристрасност (Bias mitigation)</li>
+                  <li data-i18n="syl_mod2_item3">Приватност на податоци и безбедност на алгоритмите</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 3 -->
+          <div class="card card-expandable" id="topic-3" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-3">
+            <div class="card-kicker" data-i18n="syl_mod3_kicker">Тема 3</div>
+            <div class="card-title" data-i18n="syl_mod3_title">Kernel methods</div>
+            <div class="card-text" data-i18n="syl_mod3_text">Математички основи на методи на јадра, нелинеарни трансформации во простор на карактеристики и SVM алгоритми.</div>
+            <div class="card-details-body" id="topic-details-3" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod3_sub1">Support Vector Machines (SVM)</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod3_item1">Margin maximization</li>
+                  <li data-i18n="syl_mod3_item2">Soft-margin vs. hard-margin SVM</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod3_sub2">Kernel Trick</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod3_item3">Transforming low-dimensional data to high-dimensional space</li>
+                  <li data-i18n="syl_mod3_item4">Radial Basis Function (RBF) kernel</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 4 -->
+          <div class="card card-expandable" id="topic-4" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-4">
+            <div class="card-kicker" data-i18n="syl_mod4_kicker">Тема 4</div>
+            <div class="card-title" data-i18n="syl_mod4_title">Data Engineering</div>
+            <div class="card-text" data-i18n="syl_mod4_text">Собирање, чистење, претпроцесирање, трансформација на податоци и инженерство на карактеристики (feature engineering).</div>
+            <div class="card-details-body" id="topic-details-4" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod4_sub1">Data Preparation & Pipelines</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod4_item1">Собирање, чистење и справување со недостасувачки вредности</li>
+                  <li data-i18n="syl_mod4_item2">Нормализација, скалирање и енкодирање на карактеристики</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod4_sub2">Feature Engineering</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod4_item3">TF-IDF and word embeddings</li>
+                  <li data-i18n="syl_mod4_item4">Feature engineering for recommendation & ML models</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 5 -->
+          <div class="card card-expandable" id="topic-5" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-5">
+            <div class="card-kicker" data-i18n="syl_mod5_kicker">Тема 5</div>
+            <div class="card-title" data-i18n="syl_mod5_title">AI Search</div>
+            <div class="card-text" data-i18n="syl_mod5_text">Простори на состојби, алгоритми за неинформирано и информирано пребарување (BFS, DFS, A*), хеуристики и оптимизација.</div>
+            <div class="card-details-body" id="topic-details-5" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod5_sub1">Uninformed Search</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod5_item1">Breadth-First Search (BFS), Depth-First Search (DFS)</li>
+                  <li data-i18n="syl_mod5_item2">Uniform Cost Search</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod5_sub2">Informed Search</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod5_item3">A* Algorithm and heuristics</li>
+                  <li data-i18n="syl_mod5_item4">Minimax search (game AI)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 6 -->
+          <div class="card card-expandable" id="topic-6" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-6">
+            <div class="card-kicker" data-i18n="syl_mod6_kicker">Тема 6</div>
+            <div class="card-title" data-i18n="syl_mod6_title">Supervised Learning</div>
+            <div class="card-text" data-i18n="syl_mod6_text">Алгоритми за класификација и регресија: линеарни модели, стебла на одлучување, Random Forest, Gradient Boosting и невронски мрежи.</div>
+            <div class="card-details-body" id="topic-details-6" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod6_sub1">Regression Models</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod6_item1">Linear regression (Least Squares, Gradient Descent)</li>
+                  <li data-i18n="syl_mod6_item2">Polynomial regression</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod6_sub2">Classification Models</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod6_item3">Decision Trees (entropy, information gain)</li>
+                  <li data-i18n="syl_mod6_item4">Support Vector Machines (SVM) and hyperplanes</li>
+                  <li data-i18n="syl_mod6_item5">Naïve Bayes classification</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod6_sub3">Regularization & Overfitting</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod6_item6">L1 (Lasso) and L2 (Ridge) Regularization</li>
+                  <li data-i18n="syl_mod6_item7">Cross-validation techniques</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 7 -->
+          <div class="card card-expandable" id="topic-7" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-7">
+            <div class="card-kicker" data-i18n="syl_mod7_kicker">Тема 7</div>
+            <div class="card-title" data-i18n="syl_mod7_title">Unsupervised Learning</div>
+            <div class="card-text" data-i18n="syl_mod7_text">Алгоритми за кластерирање (K-Means, DBSCAN), редукција на димензионалност (PCA, t-SNE) и откривање скриени шаблони.</div>
+            <div class="card-details-body" id="topic-details-7" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod7_sub1">Clustering</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod7_item1">K-means clustering (cost function minimization)</li>
+                  <li data-i18n="syl_mod7_item2">Hierarchical clustering</li>
+                  <li data-i18n="syl_mod7_item3">Gaussian Mixture Models (GMM)</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod7_sub2">Dimensionality Reduction</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod7_item4">PCA and its application in visualization</li>
+                  <li data-i18n="syl_mod7_item5">t-SNE for high-dimensional data representation</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 8 -->
+          <div class="card card-expandable" id="topic-8" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-8">
+            <div class="card-kicker" data-i18n="syl_mod8_kicker">Тема 8</div>
+            <div class="card-title" data-i18n="syl_mod8_title">Learning Evaluation</div>
+            <div class="card-text" data-i18n="syl_mod8_text">Метрики за перформанси (Accuracy, Precision, Recall, F1, ROC-AUC, RMSE), крос-валидација и контрола на overfitting/underfitting.</div>
+            <div class="card-details-body" id="topic-details-8" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod8_sub1">Classification Metrics</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod8_item1">Precision, recall, F1-score</li>
+                  <li data-i18n="syl_mod8_item2">ROC-AUC curves</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod8_sub2">Bias-Variance Tradeoff</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod8_item3">Overfitting detection</li>
+                  <li data-i18n="syl_mod8_item4">K-fold cross-validation</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 9 -->
+          <div class="card card-expandable" id="topic-9" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-9">
+            <div class="card-kicker" data-i18n="syl_mod9_kicker">Тема 9</div>
+            <div class="card-title" data-i18n="syl_mod9_title">Reinforcement Learning</div>
+            <div class="card-text" data-i18n="syl_mod9_text">Марковски процеси на одлучување (MDP), агенти, простори на акции, награди, Bellman равенки, Q-learning и основи на политики.</div>
+            <div class="card-details-body" id="topic-details-9" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod9_sub1">Markov Decision Processes (MDPs)</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod9_item1">States, actions, rewards</li>
+                  <li data-i18n="syl_mod9_item2">Bellman Equations</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod9_sub2">Q-Learning</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod9_item3">Temporal Difference Learning</li>
+                  <li data-i18n="syl_mod9_item4">Exploration vs. exploitation</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 10 -->
+          <div class="card card-expandable" id="topic-10" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-10">
+            <div class="card-kicker" data-i18n="syl_mod10_kicker">Тема 10</div>
+            <div class="card-title" data-i18n="syl_mod10_title">Generative Models</div>
+            <div class="card-text" data-i18n="syl_mod10_text">Архитектури на автоенкодери (VAEs), генеративни контрадикторни мрежи (GANs), дифузни модели и синтеза на нови содржини.</div>
+            <div class="card-details-body" id="topic-details-10" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod10_sub1">Генеративни архитектури</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod10_item1">Variational Autoencoders (VAEs)</li>
+                  <li data-i18n="syl_mod10_item2">Generative Adversarial Networks (GANs)</li>
+                  <li data-i18n="syl_mod10_item3">Diffusion Models и синтеза на содржина</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 11 -->
+          <div class="card card-expandable" id="topic-11" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-11">
+            <div class="card-kicker" data-i18n="syl_mod11_kicker">Тема 11</div>
+            <div class="card-title" data-i18n="syl_mod11_title">Logical Reasoning</div>
+            <div class="card-text" data-i18n="syl_mod11_text">Пропозициска логика, логика од прв ред, правила на заклучување, претставување на знаење и автоматско резонирање.</div>
+            <div class="card-details-body" id="topic-details-11" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod11_sub1">Propositional & First-Order Logic</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod11_item1">CNF, logical connectives</li>
+                  <li data-i18n="syl_mod11_item2">Unification in inference</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod11_sub2">Resolution Theorem Proving</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod11_item3">Satisfiability and SAT solvers</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 12 -->
+          <div class="card card-expandable" id="topic-12" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-12">
+            <div class="card-kicker" data-i18n="syl_mod12_kicker">Тема 12</div>
+            <div class="card-title" data-i18n="syl_mod12_title">Constraint Satisfaction Problems (CSPs)</div>
+            <div class="card-text" data-i18n="syl_mod12_text">Формулација на CSP проблеми, backtracking пребарување, пропагација на ограничувања, конзистентност на лакови (AC-3) и хеуристики.</div>
+            <div class="card-details-body" id="topic-details-12" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod12_sub1">Backtracking & Constraint Propagation</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod12_item1">AC-3 algorithm</li>
+                  <li data-i18n="syl_mod12_item2">Forward checking</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Topic 13 -->
+          <div class="card card-expandable" id="topic-13" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-details-13">
+            <div class="card-kicker" data-i18n="syl_mod13_kicker">Тема 13</div>
+            <div class="card-title" data-i18n="syl_mod13_title">Recommender Systems</div>
+            <div class="card-text" data-i18n="syl_mod13_text">Колаборативно филтрирање, филтрирање според содржина, матрична факторизација (SVD) и евалуација на системи за препораки.</div>
+            <div class="card-details-body" id="topic-details-13" hidden>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod13_sub1">Collaborative Filtering</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod13_item1">User-based and item-based filtering</li>
+                  <li data-i18n="syl_mod13_item2">Similarity metrics (cosine similarity, Pearson correlation)</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod13_sub2">Content-Based Filtering</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod13_item3">TF-IDF and word embeddings</li>
+                  <li data-i18n="syl_mod13_item4">Feature engineering for recommendation models</li>
+                </ul>
+              </div>
+              <div class="topic-subgroup">
+                <div class="topic-subtitle" data-i18n="syl_mod13_sub3">Hybrid Recommender Systems</div>
+                <ul class="topic-sublist">
+                  <li data-i18n="syl_mod13_item5">Combining collaborative and content-based filtering</li>
+                  <li data-i18n="syl_mod13_item6">Matrix factorization (SVD, ALS algorithms)</li>
+                  <li data-i18n="syl_mod13_item7">Deep learning approaches (Neural Collaborative Filtering, Autoencoders)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-toggle-btn">
+              <span class="card-toggle-label" data-i18n="topic_btn_more">Повеќе детали</span>
+              <svg class="card-toggle-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Video Lectures Section (1-11) -->
+    <section id="webinars" class="section" aria-label="Webinars">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="webinars_title">Видео предавања</h2>
+          <p class="muted" data-i18n="webinars_subtitle">Снимени сесии со меѓународни професори за секоја тема од наставната програма.</p>
+        </div>
+
+        <!-- Video Accordion Toolbar -->
+        <div class="video-accordion-toolbar">
+          <div class="video-counter-badge">
+            <span>🎬</span>
+            <span data-i18n="video_total_count">11 снимени предавања</span>
+          </div>
+          <button type="button" class="video-toggle-all-btn" id="toggle-all-videos" aria-expanded="false">
+            <span id="toggle-all-text" data-i18n="video_expand_all">Отвори ги сите</span>
+            <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+
+        <ul class="video-accordion-list">
+          <!-- Lecture 1 -->
+          <li class="video-accordion-item" id="lecture-1">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-1" id="lecture-btn-1">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">1</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_1_title">ВОВЕД ВО ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА (AI)</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_1_date">22 ЈУЛИ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-1" role="region" aria-labelledby="lecture-btn-1" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_habib_introduction_ai?part=1"
+                  title="ВОВЕД ВО ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА (AI)" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 2 -->
+          <li class="video-accordion-item" id="lecture-2">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-2" id="lecture-btn-2">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">2</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_2_title">Општествено влијание на ВИ</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_2_date">24 ЈУЛИ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-2" role="region" aria-labelledby="lecture-btn-2" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_hoque_impact_of_ai?part=1"
+                  title="Општествено влијание на ВИ" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 3 -->
+          <li class="video-accordion-item" id="lecture-3">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-3" id="lecture-btn-3">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">3</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_3_title">Методи на јадра (Kernel methods)</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_3_date">29 ЈУЛИ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-3" role="region" aria-labelledby="lecture-btn-3" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_shawe_taylor_kernel?part=1"
+                  title="Методи на јадра (Kernel methods)" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 4 -->
+          <li class="video-accordion-item" id="lecture-4">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-4" id="lecture-btn-4">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">4</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_4_title">РАБОТА СО ПОДАТОЦИ</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_4_date">31 ЈУЛИ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-4" role="region" aria-labelledby="lecture-btn-4" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_alotaibi_data?part=1"
+                  title="РАБОТА СО ПОДАТОЦИ" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 5 -->
+          <li class="video-accordion-item" id="lecture-5">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-5" id="lecture-btn-5">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">5</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_5_title">ПРИМЕНЕТИ ДЛАБОКИ ГЕНЕРАТИВНИ МОДЕЛИ</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_5_date">5 АВГУСТ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-5" role="region" aria-labelledby="lecture-btn-5" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_alotaibi_deployed_models?part=1"
+                  title="ПРИМЕНЕТИ ДЛАБОКИ ГЕНЕРАТИВНИ МОДЕЛИ" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 6 -->
+          <li class="video-accordion-item" id="lecture-6">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-6" id="lecture-btn-6">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">6</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_6_title">НАДГЛЕДУВАНО УЧЕЊЕ (SUPERVISED LEARNING)</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_6_date">7 АВГУСТ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-6" role="region" aria-labelledby="lecture-btn-6" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_nouf_supervised_learning?part=1"
+                  title="НАДГЛЕДУВАНО УЧЕЊЕ (SUPERVISED LEARNING)" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 7 -->
+          <li class="video-accordion-item" id="lecture-7">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-7" id="lecture-btn-7">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">7</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_7_title">ПРЕБАРУВАЊЕ ВО ВИ (AI-SEARCH)</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_7_date">12 АВГУСТ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-7" role="region" aria-labelledby="lecture-btn-7" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_alhijailan_ai_search?part=1"
+                  title="ПРЕБАРУВАЊЕ ВО ВИ (AI-SEARCH)" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 8 -->
+          <li class="video-accordion-item" id="lecture-8">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-8" id="lecture-btn-8">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">8</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_8_title">ЕВАЛУАЦИЈА НА УЧЕЊЕТО</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_8_date">14 АВГУСТ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-8" role="region" aria-labelledby="lecture-btn-8" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_alhijailan_learning_evaluation?part=1"
+                  title="ЕВАЛУАЦИЈА НА УЧЕЊЕТО" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 9 -->
+          <li class="video-accordion-item" id="lecture-9">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-9" id="lecture-btn-9">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">9</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_9_title">ЗАЈАКНУВАЧКО УЧЕЊЕ (REINFORCEMENT LEARNING)</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_9_date">19 АВГУСТ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-9" role="region" aria-labelledby="lecture-btn-9" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_degu_reinforcemen_learning?part=1"
+                  title="ЗАЈАКНУВАЧКО УЧЕЊЕ (REINFORCEMENT LEARNING)" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 10 -->
+          <li class="video-accordion-item" id="lecture-10">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-10" id="lecture-btn-10">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">10</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_10_title">Вовед во платформата Zindi</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_10_date">21 АВГУСТ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-10" role="region" aria-labelledby="lecture-btn-10" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_kennedy_kolesh_zindi?part=1"
+                  title="Вовед во платформата Zindi" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+
+          <!-- Lecture 11 -->
+          <li class="video-accordion-item" id="lecture-11">
+            <button type="button" class="video-accordion-header" aria-expanded="false" aria-controls="lecture-body-11" id="lecture-btn-11">
+              <div class="video-accordion-left">
+                <span class="video-num-badge">11</span>
+                <div class="video-meta-block">
+                  <div class="video-lecture-title" data-i18n="guide_step_11_title">Ненадгледувано учење (Unsupervised Learning)</div>
+                  <div class="video-lecture-date" data-i18n="guide_step_11_date">28 АВГУСТ 2024</div>
+                </div>
+              </div>
+              <div class="video-accordion-action">
+                <span class="video-action-label" data-i18n="video_btn_watch">Гледај видео</span>
+                <svg class="video-chevron-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </button>
+            <div class="video-accordion-body" id="lecture-body-11" role="region" aria-labelledby="lecture-btn-11" hidden>
+              <div class="video-player-container">
+                <iframe class="lazy-iframe"
+                  data-src="https://videolectures.net/embed/videos/AI_Olympiad_2024_kennedy_kolesh_zindi?part=1"
+                  title="Ненадгледувано учење (Unsupervised Learning)" width="100%" frameborder="0" allowfullscreen
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 3: Book Section -->
+    <section id="book" class="section alt" aria-label="Training Book">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="book_section_title">Книга за подготовка</h2>
+          <p class="muted" data-i18n="book_section_subtitle">Официјален прирачник и учебник за Меѓународната олимпијада по вештачка интелигенција.</p>
+        </div>
+
+        <div class="resource">
+          <div class="resource-left">
+            <div class="resource-title" data-i18n="resource_book_title">Книга за обука на IAIO (Eljakim Schrijvers)</div>
+            <div class="resource-text" data-i18n="resource_book_text">Официјалната книга и прирачник за обука за Меѓународната олимпијада по вештачка интелигенција со детални објаснувања на сите наставни модули.</div>
+          </div>
+          <div class="resource-right">
+            <a class="btn"
+              href="https://iaio-official.org/wp-content/uploads/2026/02/IAIO-Training-Eljakim-Schrijvers.pdf"
+              target="_blank" rel="noreferrer" data-i18n="resource_book_btn">Отвори PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Theoretical Tasks Section -->
+    <section id="tests" class="section" aria-label="Theoretical tasks and problem sets">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="tests_title">Теоретски задачи</h2>
+          <p class="muted" data-i18n="tests_subtitle">Официјални задачи од научната рунда и тестови за самостојно вежбање.</p>
+        </div>
+
+        <div class="resource">
+          <div class="resource-left">
+            <div class="resource-title" data-i18n="resource_item_title">IAIO 2024 Научна рунда — Теоретски задачи (PDF)</div>
+            <div class="resource-text" data-i18n="resource_item_text">Официјалниот тест од научната рунда на Меѓународната олимпијада по вештачка интелигенција за самостојно тестирање и подготовка.</div>
+          </div>
+          <div class="resource-right">
+            <a class="btn"
+              href="https://www.iaio-official.org/wp-content/uploads/2025/11/IAIO2024_scientific_round_test.pdf"
+              target="_blank" rel="noreferrer" data-i18n="resource_btn">Отвори PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Practical Tasks Section -->
+    <section id="resources" class="section alt" aria-label="Practical tasks and platforms">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="resources_title">Практични задачи</h2>
+          <p class="muted" data-i18n="resources_subtitle">Платформи и ресурси за практична работа со податоци и натпреварувачко машинско учење.</p>
+        </div>
+
+        <div class="resource" style="margin-bottom: 16px;">
+          <div class="resource-left">
+            <div class="resource-title" data-i18n="resource_python_title">Python</div>
+          </div>
+          <div class="resource-right">
+            <a class="btn btn-ghost"
+              href="https://www.w3schools.com/python/default.asp"
+              target="_blank" rel="noreferrer" data-i18n="resource_python_btn">Python Tutorial</a>
+          </div>
+        </div>
+
+        <div class="resource" style="margin-bottom: 16px;">
+          <div class="resource-left">
+            <div class="resource-title" data-i18n="resource_nitro_title">Nitro AI Judge — Платформа за натпревари</div>
+            <div class="resource-text" data-i18n="resource_nitro_text">Официјална платформа за евалуација, натпревари и автоматско тестирање на решенија за вештачка интелигенција.</div>
+          </div>
+          <div class="resource-right">
+            <a class="btn btn-ghost"
+              href="https://judge.nitro-ai.org/competitions"
+              target="_blank" rel="noreferrer" data-i18n="resource_nitro_btn">Посети Nitro AI Judge</a>
+          </div>
+        </div>
+
+        <div class="resource">
+          <div class="resource-left">
+            <div class="resource-title" data-i18n="resource_zindi_title">Платформа Zindi за натпреварувачко машинско учење</div>
+            <div class="resource-text" data-i18n="resource_zindi_text">Официјална платформа која се користеше за практичната рунда на IAIO за решавање реални задачи со податоци.</div>
+          </div>
+          <div class="resource-right">
+            <a class="btn btn-ghost"
+              href="https://zindi.africa/"
+              target="_blank" rel="noreferrer" data-i18n="resource_zindi_btn">Посети Zindi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img class="footer-mark" src="assets/img/logo.png" alt="" width="36" height="36" />
+        <div>
+          <div class="footer-title" data-i18n="brand_title">MOAI - Македонска олимпијада по Вештачка интелигенција</div>
+        </div>
+      </div>
+      <div class="footer-logos" aria-label="Partners">
+        <a class="footer-logo" href="https://mendo.mk/Welcome.do" target="_blank" rel="noreferrer">
+          <img src="assets/img/mendo.png" alt="MENDO" loading="lazy" decoding="async" />
+        </a>
+        <a class="footer-logo" href="https://cs.org.mk/" target="_blank" rel="noreferrer">
+          <img src="assets/img/zim.png" alt="ZIM" loading="lazy" decoding="async" />
+        </a>
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="https://github.com/dimitarmileski/MIG-AI-O" target="_blank" rel="noreferrer" data-i18n="footer_github">GitHub репозиториум</a>
+        <span class="muted" data-i18n="footer_updated">Ажурирано: 06 октомври 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Врати се на врв" title="Врати се на врв">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script>
+    (() => {
+      const translations = {
+        mk: {
+          page_title: "Ресурси — Македонска олимпијада по Вештачка интелигенција",
+          page_desc: "Ресурси, наставна програма (Syllabus), видео предавања, тестови и материјали за подготовка за олимпијадите по вештачка интелигенција.",
+          skip_to_content: "Прескокни до содржина",
+          brand_title: "MOAI - Македонска олимпијада по Вештачка интелигенција",
+          nav_home: "Почетна",
+          nav_editions: "Изданија <svg class=\"dropdown-chevron\" viewBox=\"0 0 24 24\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>",
+          nav_international: "Меѓународни",
+          nav_prev_editions: "Претходни изданија",
+          nav_resources: "Ресурси",
+          breadcrumb_home: "Почетна",
+          breadcrumb_resources: "Ресурси",
+          resources_badge_text: "📚 Материјали и подготовки",
+          resources_hero_title: "Ресурси за MOAI",
+          resources_hero_lead: "Комплетна наставна програма (Syllabus), видео предавања, вебинари, официјални тестови и материјали за подготовка за олимпијадите по вештачка интелигенција.",
+          hero_syllabus_btn: "Наставна програма (Syllabus)",
+          
+          flow_step1_title: "1. Видео предавања",
+          flow_step1_desc: "Снимени сесии и предавања од светски професори за секоја тема.",
+          flow_step1_btn: "Погледни предавања",
+          flow_step2_title: "2. Книга",
+          flow_step2_desc: "Книга за обука и подготовка (Eljakim Schrijvers).",
+          flow_step2_btn: "Отвори PDF",
+          flow_step3_title: "3. Теоретски задачи",
+          flow_step3_desc: "Задачи од научната рунда за вежбање.",
+          flow_step3_btn: "Отвори задачи",
+          flow_step4_title: "4. Практични задачи",
+          flow_step4_desc: "Работа со реални податочни сетови и натпревари.",
+          flow_step4_btn: "Истражи платформи",
+
+          syllabus_title: "Наставна програма и теми (Syllabus)",
+          syllabus_subtitle: "Преглед на клучните области и наставни модули според меѓународните стандарди на олимпијадите по ВИ.",
+          topic_btn_more: "Повеќе детали",
+          topic_btn_less: "Сокриј детали",
+          syl_mod1_kicker: "Тема 1",
+          syl_mod1_title: "AI терминологија",
+          syl_mod1_text: "Дефиниции, основни поими, историски развој и фундаментални концепти во вештачката интелигенција.",
+          syl_mod1_sub1: "Основи на ВИ",
+          syl_mod1_item1: "Дефиниции за вештачка интелигенција и интелигентни агенти",
+          syl_mod1_item2: "Тјурингов тест и историски преглед",
+          syl_mod1_item3: "Симболичка наспроти конекционистичка ВИ",
+
+          syl_mod2_kicker: "Тема 2",
+          syl_mod2_title: "Општествено влијание на ВИ (ethics, fairness)",
+          syl_mod2_text: "Етички принципи, правичност на моделите, приватност, справување со пристрасност (bias) и општествена одговорност.",
+          syl_mod2_sub1: "Ethics & Fairness",
+          syl_mod2_item1: "Етички насоки и одговорно користење на ВИ",
+          syl_mod2_item2: "Откривање и ублажување на пристрасност (Bias mitigation)",
+          syl_mod2_item3: "Приватност на податоци и безбедност на алгоритмите",
+
+          syl_mod3_kicker: "Тема 3",
+          syl_mod3_title: "Kernel methods",
+          syl_mod3_text: "Математички основи на методи на јадра, нелинеарни трансформации во простор на карактеристики и SVM алгоритми.",
+          syl_mod3_sub1: "Support Vector Machines (SVM)",
+          syl_mod3_item1: "Margin maximization",
+          syl_mod3_item2: "Soft-margin vs. hard-margin SVM",
+          syl_mod3_sub2: "Kernel Trick",
+          syl_mod3_item3: "Трансформација во високо-димензионален простор",
+          syl_mod3_item4: "Radial Basis Function (RBF) kernel",
+
+          syl_mod4_kicker: "Тема 4",
+          syl_mod4_title: "Data Engineering",
+          syl_mod4_text: "Собирање, чистење, претпроцесирање, трансформација на податоци и инженерство на карактеристики (feature engineering).",
+          syl_mod4_sub1: "Data Preparation & Pipelines",
+          syl_mod4_item1: "Собирање, чистење и справување со недостасувачки вредности",
+          syl_mod4_item2: "Нормализација, скалирање и енкодирање на карактеристики",
+          syl_mod4_sub2: "Feature Engineering",
+          syl_mod4_item3: "TF-IDF and word embeddings",
+          syl_mod4_item4: "Инженерство на карактеристики за препораки и ML модели",
+
+          syl_mod5_kicker: "Тема 5",
+          syl_mod5_title: "AI Search",
+          syl_mod5_text: "Простори на состојби, алгоритми за неинформирано и информирано пребарување (BFS, DFS, A*), хеуристики и оптимизација.",
+          syl_mod5_sub1: "Uninformed Search",
+          syl_mod5_item1: "Breadth-First Search (BFS), Depth-First Search (DFS)",
+          syl_mod5_item2: "Uniform Cost Search",
+          syl_mod5_sub2: "Informed Search",
+          syl_mod5_item3: "A* Алгоритам и хеуристики",
+          syl_mod5_item4: "Minimax пребарување (game AI)",
+
+          syl_mod6_kicker: "Тема 6",
+          syl_mod6_title: "Supervised Learning",
+          syl_mod6_text: "Алгоритми за класификација и регресија: линеарни модели, стебла на одлучување, Random Forest, Gradient Boosting и невронски мрежи.",
+          syl_mod6_sub1: "Regression Models",
+          syl_mod6_item1: "Линеарна регресија (Least Squares, Gradient Descent)",
+          syl_mod6_item2: "Полиномна регресија",
+          syl_mod6_sub2: "Classification Models",
+          syl_mod6_item3: "Стебла на одлучување (entropy, information gain)",
+          syl_mod6_item4: "Support Vector Machines (SVM) и хиперрамнини",
+          syl_mod6_item5: "Naïve Bayes класификација",
+          syl_mod6_sub3: "Regularization & Overfitting",
+          syl_mod6_item6: "L1 (Lasso) и L2 (Ridge) регуларизација",
+          syl_mod6_item7: "Крос-валидациски техники",
+
+          syl_mod7_kicker: "Тема 7",
+          syl_mod7_title: "Unsupervised Learning",
+          syl_mod7_text: "Алгоритми за кластерирање (K-Means, DBSCAN), редукција на димензионалност (PCA, t-SNE) и откривање скриени шаблони.",
+          syl_mod7_sub1: "Clustering",
+          syl_mod7_item1: "K-means кластерирање (cost function minimization)",
+          syl_mod7_item2: "Хиерархиско кластерирање",
+          syl_mod7_item3: "Gaussian Mixture Models (GMM)",
+          syl_mod7_sub2: "Dimensionality Reduction",
+          syl_mod7_item4: "PCA и примена во визуелизација",
+          syl_mod7_item5: "t-SNE за високо-димензионална репрезентација",
+
+          syl_mod8_kicker: "Тема 8",
+          syl_mod8_title: "Learning Evaluation",
+          syl_mod8_text: "Метрики за перформанси (Accuracy, Precision, Recall, F1, ROC-AUC, RMSE), крос-валидација и контрола на overfitting/underfitting.",
+          syl_mod8_sub1: "Classification Metrics",
+          syl_mod8_item1: "Precision, recall, F1-score",
+          syl_mod8_item2: "ROC-AUC криви",
+          syl_mod8_sub2: "Bias-Variance Tradeoff",
+          syl_mod8_item3: "Детекција на overfitting",
+          syl_mod8_item4: "K-fold крос-валидација",
+
+          syl_mod9_kicker: "Тема 9",
+          syl_mod9_title: "Reinforcement Learning",
+          syl_mod9_text: "Марковски процеси на одлучување (MDP), агенти, простори на акции, награди, Bellman равенки, Q-learning и основи на политики.",
+          syl_mod9_sub1: "Markov Decision Processes (MDPs)",
+          syl_mod9_item1: "Состојби, акции, награди (States, actions, rewards)",
+          syl_mod9_item2: "Bellman равенки",
+          syl_mod9_sub2: "Q-Learning",
+          syl_mod9_item3: "Temporal Difference Learning",
+          syl_mod9_item4: "Exploration vs. exploitation",
+
+          syl_mod10_kicker: "Тема 10",
+          syl_mod10_title: "Generative Models",
+          syl_mod10_text: "Архитектури на автоенкодери (VAEs), генеративни контрадикторни мрежи (GANs), дифузни модели и синтеза на нови содржини.",
+          syl_mod10_sub1: "Генеративни архитектури",
+          syl_mod10_item1: "Variational Autoencoders (VAEs)",
+          syl_mod10_item2: "Generative Adversarial Networks (GANs)",
+          syl_mod10_item3: "Diffusion Models и синтеза на содржина",
+
+          syl_mod11_kicker: "Тема 11",
+          syl_mod11_title: "Logical Reasoning",
+          syl_mod11_text: "Пропозициска логика, логика од прв ред, правила на заклучување, претставување на знаење и автоматско резонирање.",
+          syl_mod11_sub1: "Propositional & First-Order Logic",
+          syl_mod11_item1: "CNF, логички сврзници",
+          syl_mod11_item2: "Унификација во заклучување",
+          syl_mod11_sub2: "Resolution Theorem Proving",
+          syl_mod11_item3: "Задоволивост и SAT решавачи",
+
+          syl_mod12_kicker: "Тема 12",
+          syl_mod12_title: "Constraint Satisfaction Problems (CSPs)",
+          syl_mod12_text: "Формулација на CSP проблеми, backtracking пребарување, пропагација на ограничувања, конзистентност на лакови (AC-3) и хеуристики.",
+          syl_mod12_sub1: "Backtracking & Constraint Propagation",
+          syl_mod12_item1: "AC-3 алгоритам",
+          syl_mod12_item2: "Forward checking",
+
+          syl_mod13_kicker: "Тема 13",
+          syl_mod13_title: "Recommender Systems",
+          syl_mod13_text: "Колаборативно филтрирање, филтрирање според содржина, матрична факторизација (SVD) и евалуација на системи за препораки.",
+          syl_mod13_sub1: "Collaborative Filtering",
+          syl_mod13_item1: "User-based и item-based филтрирање",
+          syl_mod13_item2: "Метрики за сличност (cosine similarity, Pearson correlation)",
+          syl_mod13_sub2: "Content-Based Filtering",
+          syl_mod13_item3: "TF-IDF и word embeddings",
+          syl_mod13_item4: "Инженерство на карактеристики за системи за препораки",
+          syl_mod13_sub3: "Hybrid Recommender Systems",
+          syl_mod13_item5: "Комбинирање на collaborative и content-based филтрирање",
+          syl_mod13_item6: "Матрична факторизација (SVD, ALS algorithms)",
+          syl_mod13_item7: "Длабоко учење (Neural Collaborative Filtering, Autoencoders)",
+
+          webinars_title: "Видео предавања",
+          webinars_subtitle: "Снимени сесии со меѓународни професори за секоја тема од наставната програма.",
+          video_total_count: "11 снимени предавања",
+          video_expand_all: "Отвори ги сите",
+          video_collapse_all: "Затвори ги сите",
+          video_btn_watch: "Гледај видео",
+          video_btn_close: "Затвори видео",
+          guide_step_1_title: "ВОВЕД ВО ВЕШТАЧКА ИНТЕЛИГЕНЦИЈА (AI)",
+          guide_step_1_date: "22 ЈУЛИ 2024",
+          guide_step_2_title: "Општествено влијание на ВИ",
+          guide_step_2_date: "24 ЈУЛИ 2024",
+          guide_step_3_title: "Методи на јадра (Kernel methods)",
+          guide_step_3_date: "29 ЈУЛИ 2024",
+          guide_step_4_title: "РАБОТА СО ПОДАТОЦИ",
+          guide_step_4_date: "31 ЈУЛИ 2024",
+          guide_step_5_title: "ПРИМЕНЕТИ ДЛАБОКИ ГЕНЕРАТИВНИ МОДЕЛИ",
+          guide_step_5_date: "5 АВГУСТ 2024",
+          guide_step_6_title: "НАДГЛЕДУВАНО УЧЕЊЕ (SUPERVISED LEARNING)",
+          guide_step_6_date: "7 АВГУСТ 2024",
+          guide_step_7_title: "ПРЕБАРУВАЊЕ ВО ВИ (AI-SEARCH)",
+          guide_step_7_date: "12 АВГУСТ 2024",
+          guide_step_8_title: "ЕВАЛУАЦИЈА НА УЧЕЊЕТО",
+          guide_step_8_date: "14 АВГУСТ 2024",
+          guide_step_9_title: "ЗАЈАКНУВАЧКО УЧЕЊЕ (REINFORCEMENT LEARNING)",
+          guide_step_9_date: "19 АВГУСТ 2024",
+          guide_step_10_title: "Вовед во платформата Zindi",
+          guide_step_10_date: "21 АВГУСТ 2024",
+          guide_step_11_title: "Ненадгледувано учење (Unsupervised Learning)",
+          guide_step_11_date: "28 АВГУСТ 2024",
+
+          book_section_title: "Книга за подготовка",
+          book_section_subtitle: "Официјален прирачник и учебник за Меѓународната олимпијада по вештачка интелигенција.",
+          resource_book_title: "Книга за обука на IAIO (Eljakim Schrijvers)",
+          resource_book_text: "Официјалната книга и прирачник за обука за Меѓународната олимпијада по вештачка интелигенција со детални објаснувања на сите наставни модули.",
+          resource_book_btn: "Отвори PDF",
+
+          tests_title: "Теоретски задачи",
+          tests_subtitle: "Официјални задачи од научната рунда и тестови за самостојно вежбање.",
+          resource_item_title: "IAIO 2024 Научна рунда — Теоретски задачи (PDF)",
+          resource_item_text: "Официјалниот тест од научната рунда на Меѓународната олимпијада по вештачка интелигенција за самостојно тестирање и подготовка.",
+          resource_btn: "Отвори PDF",
+
+          resources_title: "Практични задачи",
+          resources_subtitle: "Платформи и ресурси за практична работа со податоци и натпреварувачко машинско учење.",
+          resource_python_title: "Python",
+          resource_python_btn: "Python Tutorial",
+          resource_zindi_title: "Платформа Zindi за натпреварувачко машинско учење",
+          resource_zindi_text: "Официјална платформа која се користеше за практичната рунда на IAIO за решавање реални задачи со податоци.",
+          resource_zindi_btn: "Посети Zindi",
+          resource_nitro_title: "Nitro AI Judge — Платформа за натпревари",
+          resource_nitro_text: "Официјална платформа за евалуација, натпревари и автоматско тестирање на решенија за вештачка интелигенција.",
+          resource_nitro_btn: "Посети Nitro AI Judge",
+          footer_github: "GitHub репозиториум",
+          footer_updated: "Ажурирано: 06 октомври 2026",
+          back_to_top: "Врати се на врв"
+        },
+        en: {
+          page_title: "Resources — Macedonian Olympiad of Artificial Intelligence",
+          page_desc: "Resources, Syllabus, video lectures, practice tests, and preparation materials for AI olympiads.",
+          skip_to_content: "Skip to content",
+          brand_title: "MOAI - Macedonian Olympiad of Artificial Intelligence",
+          nav_home: "Home",
+          nav_editions: "Editions <svg class=\"dropdown-chevron\" viewBox=\"0 0 24 24\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>",
+          nav_international: "International",
+          nav_prev_editions: "Previous Editions",
+          nav_resources: "Resources",
+          breadcrumb_home: "Home",
+          breadcrumb_resources: "Resources",
+          resources_badge_text: "📚 Materials & Preparation",
+          resources_hero_title: "Resources for MOAI",
+          resources_hero_lead: "Complete Syllabus, video lectures, webinars, official tests, and preparation materials for AI olympiads.",
+          hero_syllabus_btn: "Curriculum (Syllabus)",
+
+          flow_step1_title: "1. Video Lectures",
+          flow_step1_desc: "Recorded sessions and lectures by international professors covering the complete curriculum.",
+          flow_step1_btn: "View Lectures",
+          flow_step2_title: "2. Book",
+          flow_step2_desc: "Training Book and study manual (Eljakim Schrijvers).",
+          flow_step2_btn: "Open Book",
+          flow_step3_title: "3. Theoretical Tasks",
+          flow_step3_desc: "Problem sets and tasks from the scientific round for practice.",
+          flow_step3_btn: "Open Tasks",
+          flow_step4_title: "4. Practical Tasks",
+          flow_step4_desc: "Hands-on machine learning challenges and competitions with real-world datasets.",
+          flow_step4_btn: "Explore Platforms",
+
+          syllabus_title: "Syllabus & Core Topics",
+          syllabus_subtitle: "Overview of key domains and learning modules aligned with international AI Olympiad standards.",
+          topic_btn_more: "Show details",
+          topic_btn_less: "Hide details",
+          syl_mod1_kicker: "Topic 1",
+          syl_mod1_title: "AI Terminology",
+          syl_mod1_text: "Fundamental definitions, terminology, historical context, and core concepts in Artificial Intelligence.",
+          syl_mod1_sub1: "AI Foundations & Terminology",
+          syl_mod1_item1: "Definitions of artificial intelligence and intelligent agents",
+          syl_mod1_item2: "Turing Test and historical milestones",
+          syl_mod1_item3: "Symbolic vs connectionist AI",
+
+          syl_mod2_kicker: "Topic 2",
+          syl_mod2_title: "Societal Impact of AI (Ethics, Fairness)",
+          syl_mod2_text: "Ethical guidelines, algorithmic fairness, data privacy, bias mitigation, and responsible AI deployment.",
+          syl_mod2_sub1: "Ethics & Fairness",
+          syl_mod2_item1: "Ethical guidelines and responsible AI deployment",
+          syl_mod2_item2: "Bias detection and mitigation techniques",
+          syl_mod2_item3: "Data privacy and algorithm security",
+
+          syl_mod3_kicker: "Topic 3",
+          syl_mod3_title: "Kernel Methods",
+          syl_mod3_text: "Mathematical foundations of kernel methods, feature space transformations, and Support Vector Machines (SVM).",
+          syl_mod3_sub1: "Support Vector Machines (SVM)",
+          syl_mod3_item1: "Margin maximization",
+          syl_mod3_item2: "Soft-margin vs. hard-margin SVM",
+          syl_mod3_sub2: "Kernel Trick",
+          syl_mod3_item3: "Transforming low-dimensional data to high-dimensional space",
+          syl_mod3_item4: "Radial Basis Function (RBF) kernel",
+
+          syl_mod4_kicker: "Topic 4",
+          syl_mod4_title: "Data Engineering",
+          syl_mod4_text: "Data collection, cleaning, preprocessing, data pipeline transformations, and feature engineering.",
+          syl_mod4_sub1: "Data Preparation & Pipelines",
+          syl_mod4_item1: "Data collection, cleaning, and missing value imputation",
+          syl_mod4_item2: "Normalization, scaling, and categorical encoding",
+          syl_mod4_sub2: "Feature Engineering",
+          syl_mod4_item3: "TF-IDF and word embeddings",
+          syl_mod4_item4: "Feature engineering for recommendation and ML models",
+
+          syl_mod5_kicker: "Topic 5",
+          syl_mod5_title: "AI Search",
+          syl_mod5_text: "State-space search strategies, uninformed and heuristic search (BFS, DFS, A*), and optimization techniques.",
+          syl_mod5_sub1: "Uninformed Search",
+          syl_mod5_item1: "Breadth-First Search (BFS), Depth-First Search (DFS)",
+          syl_mod5_item2: "Uniform Cost Search",
+          syl_mod5_sub2: "Informed Search",
+          syl_mod5_item3: "A* Algorithm and heuristics",
+          syl_mod5_item4: "Minimax search (game AI)",
+
+          syl_mod6_kicker: "Topic 6",
+          syl_mod6_title: "Supervised Learning",
+          syl_mod6_text: "Classification and regression algorithms: linear models, decision trees, ensembles (Random Forest, Boosting), and neural networks.",
+          syl_mod6_sub1: "Regression Models",
+          syl_mod6_item1: "Linear regression (Least Squares, Gradient Descent)",
+          syl_mod6_item2: "Polynomial regression",
+          syl_mod6_sub2: "Classification Models",
+          syl_mod6_item3: "Decision Trees (entropy, information gain)",
+          syl_mod6_item4: "Support Vector Machines (SVM) and hyperplanes",
+          syl_mod6_item5: "Naïve Bayes classification",
+          syl_mod6_sub3: "Regularization & Overfitting",
+          syl_mod6_item6: "L1 (Lasso) and L2 (Ridge) Regularization",
+          syl_mod6_item7: "Cross-validation techniques",
+
+          syl_mod7_kicker: "Topic 7",
+          syl_mod7_title: "Unsupervised Learning",
+          syl_mod7_text: "Clustering algorithms (K-Means, DBSCAN), dimensionality reduction (PCA, t-SNE), and latent representation discovery.",
+          syl_mod7_sub1: "Clustering",
+          syl_mod7_item1: "K-means clustering (cost function minimization)",
+          syl_mod7_item2: "Hierarchical clustering",
+          syl_mod7_item3: "Gaussian Mixture Models (GMM)",
+          syl_mod7_sub2: "Dimensionality Reduction",
+          syl_mod7_item4: "PCA and its application in visualization",
+          syl_mod7_item5: "t-SNE for high-dimensional data representation",
+
+          syl_mod8_kicker: "Topic 8",
+          syl_mod8_title: "Learning Evaluation",
+          syl_mod8_text: "Evaluation metrics (Accuracy, Precision, Recall, F1, ROC-AUC, RMSE), cross-validation, and overfitting control.",
+          syl_mod8_sub1: "Classification Metrics",
+          syl_mod8_item1: "Precision, recall, F1-score",
+          syl_mod8_item2: "ROC-AUC curves",
+          syl_mod8_sub2: "Bias-Variance Tradeoff",
+          syl_mod8_item3: "Overfitting detection",
+          syl_mod8_item4: "K-fold cross-validation",
+
+          syl_mod9_kicker: "Topic 9",
+          syl_mod9_title: "Reinforcement Learning",
+          syl_mod9_text: "Markov Decision Processes (MDP), agents, environments, rewards, Bellman equations, Q-learning, and policy algorithms.",
+          syl_mod9_sub1: "Markov Decision Processes (MDPs)",
+          syl_mod9_item1: "States, actions, rewards",
+          syl_mod9_item2: "Bellman Equations",
+          syl_mod9_sub2: "Q-Learning",
+          syl_mod9_item3: "Temporal Difference Learning",
+          syl_mod9_item4: "Exploration vs. exploitation",
+
+          syl_mod10_kicker: "Topic 10",
+          syl_mod10_title: "Generative Models",
+          syl_mod10_text: "Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), diffusion models, and data synthesis.",
+          syl_mod10_sub1: "Generative Architectures",
+          syl_mod10_item1: "Variational Autoencoders (VAEs)",
+          syl_mod10_item2: "Generative Adversarial Networks (GANs)",
+          syl_mod10_item3: "Diffusion Models and content synthesis",
+
+          syl_mod11_kicker: "Topic 11",
+          syl_mod11_title: "Logical Reasoning",
+          syl_mod11_text: "Propositional and first-order logic, inference rules, theorem proving, knowledge representation, and automated reasoning.",
+          syl_mod11_sub1: "Propositional & First-Order Logic",
+          syl_mod11_item1: "CNF, logical connectives",
+          syl_mod11_item2: "Unification in inference",
+          syl_mod11_sub2: "Resolution Theorem Proving",
+          syl_mod11_item3: "Satisfiability and SAT solvers",
+
+          syl_mod12_kicker: "Topic 12",
+          syl_mod12_title: "Constraint Satisfaction Problems (CSPs)",
+          syl_mod12_text: "CSP formulation, backtracking search, constraint propagation, arc consistency (AC-3), and heuristic search.",
+          syl_mod12_sub1: "Backtracking & Constraint Propagation",
+          syl_mod12_item1: "AC-3 algorithm",
+          syl_mod12_item2: "Forward checking",
+
+          syl_mod13_kicker: "Topic 13",
+          syl_mod13_title: "Recommender Systems",
+          syl_mod13_text: "Collaborative filtering, content-based recommendation, matrix factorization (SVD), and recommender evaluation metrics.",
+          syl_mod13_sub1: "Collaborative Filtering",
+          syl_mod13_item1: "User-based and item-based filtering",
+          syl_mod13_item2: "Similarity metrics (cosine similarity, Pearson correlation)",
+          syl_mod13_sub2: "Content-Based Filtering",
+          syl_mod13_item3: "TF-IDF and word embeddings",
+          syl_mod13_item4: "Feature engineering for recommendation models",
+          syl_mod13_sub3: "Hybrid Recommender Systems",
+          syl_mod13_item5: "Combining collaborative and content-based filtering",
+          syl_mod13_item6: "Matrix factorization (SVD, ALS algorithms)",
+          syl_mod13_item7: "Deep learning approaches (Neural Collaborative Filtering, Autoencoders)",
+
+          webinars_title: "Video Lectures",
+          webinars_subtitle: "Recorded sessions delivered by international professors covering the full curriculum.",
+          video_total_count: "11 recorded lectures",
+          video_expand_all: "Expand all",
+          video_collapse_all: "Collapse all",
+          video_btn_watch: "Watch video",
+          video_btn_close: "Close video",
+          guide_step_1_title: "INTRODUCTION TO AI",
+          guide_step_1_date: "22 JULY 2024",
+          guide_step_2_title: "Societal impact of AI",
+          guide_step_2_date: "24 JULY 2024",
+          guide_step_3_title: "Kernel methods",
+          guide_step_3_date: "29 JULY 2024",
+          guide_step_4_title: "WORKING WITH DATA",
+          guide_step_4_date: "31 JULY 2024",
+          guide_step_5_title: "DEPLOYED DEEP GENERATIVE MODELS",
+          guide_step_5_date: "5 AUGUST 2024",
+          guide_step_6_title: "SUPERVISED LEARNING",
+          guide_step_6_date: "7 AUGUST 2024",
+          guide_step_7_title: "AI-SEARCH",
+          guide_step_7_date: "12 AUGUST 2024",
+          guide_step_8_title: "LEARNING EVALUATION",
+          guide_step_8_date: "14 AUGUST 2024",
+          guide_step_9_title: "REINFORCEMENT LEARNING",
+          guide_step_9_date: "19 AUGUST 2024",
+          guide_step_10_title: "Introduction to Zindi Platform",
+          guide_step_10_date: "21 AUGUST 2024",
+          guide_step_11_title: "Unsupervised Learning",
+          guide_step_11_date: "28 AUGUST 2024",
+
+          book_section_title: "Training Book",
+          book_section_subtitle: "Official training book and study manual for the International Artificial Intelligence Olympiad.",
+          resource_book_title: "IAIO Training Book (Eljakim Schrijvers)",
+          resource_book_text: "Official training book and comprehensive study guide for the International Artificial Intelligence Olympiad.",
+          resource_book_btn: "Open PDF",
+
+          tests_title: "Theoretical Tasks",
+          tests_subtitle: "Official problem sets and scientific round tests for practice.",
+          resource_item_title: "IAIO 2024 Scientific Round — Theoretical Tasks (PDF)",
+          resource_item_text: "Official scientific round test from the International AI Olympiad for self-testing and preparation.",
+          resource_btn: "Open PDF",
+
+          resources_title: "Practical Tasks",
+          resources_subtitle: "Platforms and resources for hands-on machine learning challenges and competitive data science.",
+          resource_python_title: "Python",
+          resource_python_btn: "Python Tutorial",
+          resource_zindi_title: "Zindi Platform for Competitive Machine Learning",
+          resource_zindi_text: "Official platform used for the practical round of IAIO to solve real-world data science challenges.",
+          resource_zindi_btn: "Visit Zindi",
+          resource_nitro_title: "Nitro AI Judge — Competitions Platform",
+          resource_nitro_text: "Official automated evaluation and competition platform for artificial intelligence challenges.",
+          resource_nitro_btn: "Visit Nitro AI Judge",
+          footer_github: "GitHub repository",
+          footer_updated: "Updated: 06 October 2026",
+          back_to_top: "Back to top"
+        }
+      };
+
+      const langSelect = document.getElementById('lang-select');
+      const themeToggle = document.getElementById('theme-toggle');
+      const backToTopBtn = document.getElementById('back-to-top');
+      const accordionItems = Array.from(document.querySelectorAll('.video-accordion-item'));
+      const toggleAllBtn = document.getElementById('toggle-all-videos');
+      const toggleAllText = document.getElementById('toggle-all-text');
+      const topicCards = Array.from(document.querySelectorAll('.card-expandable'));
+
+      // Topic Card Expand / Collapse
+      function toggleTopicCard(card) {
+        const isExpanded = card.classList.contains('is-expanded');
+        const details = card.querySelector('.card-details-body');
+        const label = card.querySelector('.card-toggle-label');
+        const currentLang = document.documentElement.lang || 'mk';
+        const dict = translations[currentLang] || translations.mk;
+
+        if (isExpanded) {
+          card.classList.remove('is-expanded');
+          card.setAttribute('aria-expanded', 'false');
+          if (details) details.hidden = true;
+          if (label) label.textContent = dict.topic_btn_more || 'Повеќе детали';
+        } else {
+          card.classList.add('is-expanded');
+          card.setAttribute('aria-expanded', 'true');
+          if (details) details.hidden = false;
+          if (label) label.textContent = dict.topic_btn_less || 'Сокриј детали';
+        }
+      }
+
+      topicCards.forEach((card) => {
+        card.addEventListener('click', () => toggleTopicCard(card));
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleTopicCard(card);
+          }
+        });
+      });
+
+      const loadIframe = (iframe) => {
+        if (!iframe || iframe.dataset.loaded === '1') return;
+        const src = iframe.dataset.src;
+        if (!src) return;
+        iframe.src = src;
+        iframe.dataset.loaded = '1';
+      };
+
+      function openAccordionItem(item) {
+        const btn = item.querySelector('.video-accordion-header');
+        const body = item.querySelector('.video-accordion-body');
+        const label = item.querySelector('.video-action-label');
+        const currentLang = document.documentElement.lang || 'mk';
+        const dict = translations[currentLang] || translations.mk;
+
+        item.classList.add('is-open');
+        if (btn) btn.setAttribute('aria-expanded', 'true');
+        if (body) body.hidden = false;
+        if (label) label.textContent = dict.video_btn_close || 'Затвори видео';
+
+        if (body) {
+          const iframe = body.querySelector('iframe.lazy-iframe');
+          if (iframe) loadIframe(iframe);
+        }
+      }
+
+      function closeAccordionItem(item) {
+        const btn = item.querySelector('.video-accordion-header');
+        const body = item.querySelector('.video-accordion-body');
+        const label = item.querySelector('.video-action-label');
+        const currentLang = document.documentElement.lang || 'mk';
+        const dict = translations[currentLang] || translations.mk;
+
+        item.classList.remove('is-open');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+        if (body) body.hidden = true;
+        if (label) label.textContent = dict.video_btn_watch || 'Гледај видео';
+      }
+
+      function toggleAccordionItem(item) {
+        if (item.classList.contains('is-open')) {
+          closeAccordionItem(item);
+        } else {
+          openAccordionItem(item);
+        }
+        updateToggleAllButtonState();
+      }
+
+      accordionItems.forEach((item) => {
+        const header = item.querySelector('.video-accordion-header');
+        if (header) {
+          header.addEventListener('click', () => toggleAccordionItem(item));
+        }
+      });
+
+      function updateToggleAllButtonState() {
+        if (!toggleAllBtn || !toggleAllText) return;
+        const total = accordionItems.length;
+        const openCount = document.querySelectorAll('.video-accordion-item.is-open').length;
+        const currentLang = document.documentElement.lang || 'mk';
+        const dict = translations[currentLang] || translations.mk;
+
+        if (openCount === total && total > 0) {
+          toggleAllBtn.classList.add('all-open');
+          toggleAllBtn.setAttribute('aria-expanded', 'true');
+          toggleAllText.textContent = dict.video_collapse_all || 'Затвори ги сите';
+        } else {
+          toggleAllBtn.classList.remove('all-open');
+          toggleAllBtn.setAttribute('aria-expanded', 'false');
+          toggleAllText.textContent = dict.video_expand_all || 'Отвори ги сите';
+        }
+      }
+
+      if (toggleAllBtn) {
+        toggleAllBtn.addEventListener('click', () => {
+          const total = accordionItems.length;
+          const openCount = document.querySelectorAll('.video-accordion-item.is-open').length;
+          const shouldOpen = openCount < total;
+
+          accordionItems.forEach((item) => {
+            if (shouldOpen) {
+              openAccordionItem(item);
+            } else {
+              closeAccordionItem(item);
+            }
+          });
+          updateToggleAllButtonState();
+        });
+      }
+
+      function applyTranslations(lang) {
+        const dict = translations[lang] || translations.mk;
+        document.documentElement.lang = lang;
+
+        const titleTag = document.querySelector('title');
+        if (titleTag && dict.page_title) titleTag.textContent = dict.page_title;
+
+        const descMeta = document.querySelector('meta[name="description"]');
+        if (descMeta && dict.page_desc) descMeta.setAttribute('content', dict.page_desc);
+
+        if (backToTopBtn && dict.back_to_top) {
+          backToTopBtn.setAttribute('title', dict.back_to_top);
+          backToTopBtn.setAttribute('aria-label', dict.back_to_top);
+        }
+
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key]) el.textContent = dict[key];
+        });
+
+        document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+          const key = el.getAttribute('data-i18n-html');
+          if (dict[key]) el.innerHTML = dict[key];
+        });
+
+        accordionItems.forEach((item) => {
+          const label = item.querySelector('.video-action-label');
+          if (label) {
+            if (item.classList.contains('is-open')) {
+              label.textContent = dict.video_btn_close || 'Затвори видео';
+            } else {
+              label.textContent = dict.video_btn_watch || 'Гледај видео';
+            }
+          }
+        });
+
+        topicCards.forEach((card) => {
+          const label = card.querySelector('.card-toggle-label');
+          if (label) {
+            if (card.classList.contains('is-expanded')) {
+              label.textContent = dict.topic_btn_less || 'Сокриј детали';
+            } else {
+              label.textContent = dict.topic_btn_more || 'Повеќе детали';
+            }
+          }
+        });
+
+        updateToggleAllButtonState();
+      }
+
+      function getPreferredLanguage() {
+        try {
+          const saved = localStorage.getItem('iaio_lang');
+          if (saved === 'mk' || saved === 'en') return saved;
+        } catch (e) {}
+        const browser = (navigator.language || 'mk').toLowerCase();
+        return browser.startsWith('mk') ? 'mk' : 'en';
+      }
+
+      const initialLang = getPreferredLanguage();
+      if (langSelect) {
+        langSelect.value = initialLang;
+        langSelect.addEventListener('change', (e) => {
+          const chosen = e.target.value;
+          try {
+            localStorage.setItem('iaio_lang', chosen);
+          } catch (err) {}
+          applyTranslations(chosen);
+        });
+      }
+      applyTranslations(initialLang);
+
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        try {
+          localStorage.setItem('iaio_theme', theme);
+        } catch (e) {}
+      }
+
+      let initialTheme = 'light';
+      try {
+        initialTheme = localStorage.getItem('iaio_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (e) {}
+      setTheme(initialTheme);
+
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          setTheme(newTheme);
+        });
+      }
+
+      if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.add('is-visible');
+          } else {
+            backToTopBtn.classList.remove('is-visible');
+          }
+        }, { passive: true });
+
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

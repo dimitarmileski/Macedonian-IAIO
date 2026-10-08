@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="mk" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#d20000" />
+  <title>MOAI 2026 — Резултати и Галерија | Македонска олимпијада по Вештачка интелигенција</title>
+  <meta name="description" content="Резултати, ранг листа и фото галерија од Македонската олимпијада по Вештачка интелигенција (MOAI 2026)." />
+
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('iaio_theme');
+        if (t === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch(e){}
+    })();
+  </script>
+
+  <link rel="icon" href="assets/img/logo.png" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip_to_content">Прескокни до содржина</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" style="text-decoration: none;">
+        <img class="brand-mark" src="assets/img/logo.png" alt="Macedonian Olympiad of Artificial Intelligence logo" width="44" height="44" />
+        <div class="brand-text">
+          <div class="brand-title" data-i18n="brand_title">MOAI - Македонска олимпијада по Вештачка интелигенција</div>
+        </div>
+      </a>
+
+      <div class="header-right-group">
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" data-i18n="nav_home">Почетна</a>
+          
+          <a href="resources.html" data-i18n="nav_resources">Ресурси</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" data-i18n-html="nav_editions">
+              Изданија
+              <svg class="dropdown-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="moai2027.html" class="nav-dropdown-item">
+                <span>MOAI 2027</span>
+                <span class="nav-dropdown-badge">2027</span>
+              </a>
+              <a href="mkiaio.html" class="nav-dropdown-item active">
+                <span>MOAI 2026</span>
+                <span class="nav-dropdown-badge">2026</span>
+              </a>
+
+              <div class="nav-dropdown-divider"></div>
+
+              <div class="nav-dropdown-sub">
+                <div class="nav-dropdown-sub-btn">
+                  <span data-i18n="nav_international">Меѓународни</span>
+                  <svg class="sub-chevron" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+                <div class="nav-dropdown-sub-menu">
+                  <a href="iaio2026.html" class="nav-dropdown-item">
+                    <span>IAIO 2026</span>
+                    <span class="nav-dropdown-badge badge-intl">Љубљана</span>
+                  </a>
+                  <a href="euroai2026.html" class="nav-dropdown-item">
+                    <span>EUROAI 2026</span>
+                    <span class="nav-dropdown-badge badge-intl">Клуж</span>
+                  </a>
+                  <div class="nav-dropdown-divider"></div>
+                  <a href="previous-editions.html" class="nav-dropdown-item">
+                    <span data-i18n="nav_prev_editions">Претходни изданија</span>
+                    <span class="nav-dropdown-badge badge-prev">Архива</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-controls">
+          <div class="lang-selector-wrap">
+            <select id="lang-select" class="lang-select" aria-label="Избор на јазик / Select language">
+              <option value="mk" selected>🇲🇰 Македонски</option>
+              <option value="en">🇬🇧 English</option>
+            </select>
+          </div>
+
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Промени тема" title="Промени тема / Toggle theme">
+            <svg class="theme-toggle-icon icon-moon" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-toggle-icon icon-sun" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flag-stripe" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <!-- Hero / Intro for 2026 Edition -->
+    <section class="edition-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html" data-i18n="breadcrumb_home">Почетна</a>
+          <span class="breadcrumb-separator">/</span>
+          <span data-i18n="breadcrumb_editions">Изданија</span>
+          <span class="breadcrumb-separator">/</span>
+          <span class="muted">MOAI 2026</span>
+        </nav>
+
+        <div class="edition-badge" data-i18n="edition_badge_text">🏆 Национално издание 2026</div>
+        <h1 data-i18n="edition_hero_title">MOAI 2026</h1>
+        <p class="lead" data-i18n-html="edition_hero_lead">
+          Официјална ранг листа, наградени ученици и фото галерија од Македонската олимпијада по Вештачка интелигенција (MOAI 2026) за селекција на тимот за Меѓународната олимпијада по вештачка интелигенција (IAIO), одржана на <strong>1 февруари 2026</strong> на ФИНКИ, Скопје.
+        </p>
+
+        <div class="edition-stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">19</div>
+            <div class="stat-label" data-i18n="stat_participants">Учесници финалисти</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">1</div>
+            <div class="stat-label" data-i18n="stat_gold">🏆 Златен медал</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">2</div>
+            <div class="stat-label" data-i18n="stat_silver">🥈 Сребрени медали</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4 / 4</div>
+            <div class="stat-label" data-i18n="stat_bronze_mentions">🥉 Бронзени / 🎉 Пофалби</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="section alt" aria-label="LeaderBoard 2026">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="leaderboard_title">Ранг листа (LeaderBoard 2026)</h2>
+          <p class="muted" data-i18n="leaderboard_subtitle">Резултати и освоени награди од Македонската олимпијада по Вештачка интелигенција 2026.</p>
+        </div>
+
+        <div class="leaderboard">
+          <table class="leaderboard-table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col" data-i18n="th_name">Име</th>
+                <th scope="col" data-i18n="th_surname">Презиме</th>
+                <th scope="col" data-i18n="th_school">Средно училиште</th>
+                <th scope="col" data-i18n="th_city">Град</th>
+                <th scope="col" data-i18n="th_points">Поени</th>
+                <th scope="col" data-i18n="th_award">Награда</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Филип</td>
+                <td>Калкашлиев</td>
+                <td>ПСУ &quot;Јахја Кемал&quot;- Скопје</td>
+                <td>Скопје</td>
+                <td>51.9</td>
+                <td><span class="award-badge award-gold" data-award="gold">🏆 Златен</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Тодор</td>
+                <td>Пљаков</td>
+                <td>СОУ „Гимназија Кочо Рацин“ Велес</td>
+                <td>Велес</td>
+                <td>39.3</td>
+                <td><span class="award-badge award-silver" data-award="silver">🥈 Сребрен</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Андреј</td>
+                <td>Ангелов</td>
+                <td>Математичко-информатичка гимназија</td>
+                <td>Македонска Каменица</td>
+                <td>37.8</td>
+                <td><span class="award-badge award-silver" data-award="silver">🥈 Сребрен</span></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Анастасија</td>
+                <td>Пецевска</td>
+                <td>Математичко-информатичка гимназија</td>
+                <td>Скопје</td>
+                <td>33.8</td>
+                <td><span class="award-badge award-bronze" data-award="bronze">🥉 Бронзен</span></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Сердар</td>
+                <td>Цветков</td>
+                <td>СЕТУГС „Михајло Пупин“</td>
+                <td>Скопје</td>
+                <td>30.5</td>
+                <td><span class="award-badge award-bronze" data-award="bronze">🥉 Бронзен</span></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Матеј</td>
+                <td>Ѓорѓиев</td>
+                <td>СОУ &quot;Гимназија Кочо Рацин&quot; Велес</td>
+                <td>Велес</td>
+                <td>30.4</td>
+                <td><span class="award-badge award-bronze" data-award="bronze">🥉 Бронзен</span></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Благој</td>
+                <td>Рујаноски Стојановски</td>
+                <td>СОУ Гимназија „Мирче Ацев“ - Прилеп</td>
+                <td>Прилеп</td>
+                <td>29.4</td>
+                <td><span class="award-badge award-bronze" data-award="bronze">🥉 Бронзен</span></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Василиса</td>
+                <td>Курзакова</td>
+                <td>СЕТУГС „Михајло Пупин“</td>
+                <td>Скопје</td>
+                <td>21.6</td>
+                <td><span class="award-badge award-mention" data-award="mention">🎉 Пофалба</span></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Мартин</td>
+                <td>Дамкоски</td>
+                <td>СЕТУГС „Михајло Пупин“</td>
+                <td>Скопје</td>
+                <td>21.1</td>
+                <td><span class="award-badge award-mention" data-award="mention">🎉 Пофалба</span></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Никола</td>
+                <td>Здравески</td>
+                <td>СОУ Гимназија „Мирче Ацев“ - Прилеп</td>
+                <td>Прилеп</td>
+                <td>19.6</td>
+                <td><span class="award-badge award-mention" data-award="mention">🎉 Пофалба</span></td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Милева</td>
+                <td>Додиќ</td>
+                <td>СЕТУГС „Михајло Пупин“</td>
+                <td>Скопје</td>
+                <td>19.5</td>
+                <td><span class="award-badge award-mention" data-award="mention">🎉 Пофалба</span></td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Константин</td>
+                <td>Димовски</td>
+                <td>СОУ Гимназија „Мирче Ацев“ - Прилеп</td>
+                <td>Прилеп</td>
+                <td>7.7</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Дамјан</td>
+                <td>Лазески</td>
+                <td>СОУ Гимназија „Мирче Ацев“ - Прилеп</td>
+                <td>Прилеп</td>
+                <td>6.8</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Марин</td>
+                <td>Христоски</td>
+                <td>СОУ Гимназија „Мирче Ацев“ - Прилеп</td>
+                <td>Прилеп</td>
+                <td>5.3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Немања</td>
+                <td>Рајковиќ</td>
+                <td>СЕТУГС „Михајло Пупин“</td>
+                <td>Скопје</td>
+                <td>4.5</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>Алексеј</td>
+                <td>Мицковски</td>
+                <td>СОУ Гимназија „Мирче Ацев“ - Прилеп</td>
+                <td>Прилеп</td>
+                <td>2</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Филип</td>
+                <td>Спиркоски</td>
+                <td>СОУ Гимназија „Мирче Ацев“ - Прилеп</td>
+                <td>Прилеп</td>
+                <td>1</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>Петар</td>
+                <td>Попоски</td>
+                <td>Математичко-информатичка гимназија</td>
+                <td>Скопје</td>
+                <td>0</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>Леонид</td>
+                <td>Цуклев</td>
+                <td>Математичко-информатичка гимназија</td>
+                <td>Гевгелија</td>
+                <td>0</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="leaderboard-actions">
+          <a class="btn btn-ghost" href="https://dimitarmileski.github.io/Macedonian-IAIO/LeaderBoard%20-%20%D0%9C%D0%9A-IAIO%202026.pdf" target="_blank" rel="noreferrer" data-i18n="leaderboard_detailed_results">Детални резултати 📄</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery of 2026 Edition -->
+    <section id="gallery" class="section" aria-label="MOAI 2026 gallery">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="gallery_full_title">Фото галерија од MOAI 2026</h2>
+          <p class="muted" data-i18n="gallery_full_subtitle">Моменти и атмосфера од натпреварот и доделувањето на наградите на ФИНКИ.</p>
+        </div>
+
+        <div class="gallery-grid-full" aria-label="MOAI 2026 complete photo gallery">
+          <figure class="gallery-item" data-photo="1">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-13.jpg" alt="MOAI 2026 - Доделување на награди" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="2">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-9.jpg" alt="MOAI 2026 - Заедничка фотографија на учесниците" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="3">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-1.jpg" alt="MOAI 2026 - Работна атмосфера" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="4">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-2.jpg" alt="MOAI 2026 - Решавање задачи" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="5">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-3.jpg" alt="MOAI 2026 - Натпреварувачи во сала" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="6">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-4.jpg" alt="MOAI 2026 - Натпреварувачки простор" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="7">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-5.jpg" alt="MOAI 2026 - Учесници" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="8">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-6.jpg" alt="MOAI 2026 - Сала ФИНКИ" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="9">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-7.jpg" alt="MOAI 2026 - Натпреварувачки ден" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="10">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-8.jpg" alt="MOAI 2026 - Собирање на учесниците" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="11">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-10.jpg" alt="MOAI 2026 - Презентација и отворање" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="12">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-11.jpg" alt="MOAI 2026 - Наградени финалисти" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="gallery-item" data-photo="13">
+            <img class="gallery-img" src="assets/img/editions/mk-iaio%202026/mk-iaio2026-12.jpg" alt="MOAI 2026 - Прогласување на победниците" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dates and Location Section -->
+    <section id="dates" class="section alt" aria-label="Dates and location">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="dates_title">Датуми и локација</h2>
+          <p class="muted" data-i18n="dates_subtitle">Клучни информации за настаните.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="panel">
+            <div class="panel-title" data-i18n="panel_mk_title">Македонска селекција</div>
+            <div class="panel-text" data-i18n-html="panel_mk_text">
+              Локален натпревар во <strong>Скопје</strong> за избор на тимот.
+              <div class="panel-text">
+                <strong>Датум: 1 февруари 2026</strong><br />
+                <strong>Време: 11:00ч</strong><br />
+                <strong>Локација: Факултет за информатички науки и компјутерско инженерство (ФИНКИ), Универзитет „Св. Кирил и Методиј“ во Скопје</strong><br />
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-title" data-i18n="panel_iaio_title">Меѓународна олимпијада по вештачка интелигенција (IAIO)</div>
+            <div class="panel-text">
+              <a class="iaio-strip-logo" href="https://www.iaio-official.org/" target="_blank" rel="noreferrer">
+                <img src="assets/img/IAIO-2025-logo-divi.png" alt="International AI Olympiad (IAIO)" loading="lazy" decoding="async" />
+              </a>
+              <a href="https://www.iaio-official.org/" target="_blank" rel="noreferrer">iaio-official.org</a><br />
+              <span data-i18n-html="panel_iaio_text"><strong>23–27 февруари 2026</strong><br />Љубљана, Словенија</span>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-title" data-i18n="other_ceoai_title">Централно-европска олимпијада по вештачка интелигенција</div>
+            <div class="panel-text">
+              <a class="iaio-strip-logo" href="https://ceoai-official.org/" target="_blank" rel="noreferrer">
+                <img src="assets/img/ceoai-logo.png" alt="Central European Olympiad in Artificial Intelligence (CEOAI)" loading="lazy" decoding="async" />
+              </a>
+              <a href="https://ceoai-official.org/" target="_blank" rel="noreferrer">ceoai-official.org</a><br />
+              <span data-i18n-html="other_ceoai_info">Клуж-Напока, Романија<br /><strong>14–19 јули 2026</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Преглед на слика">
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Затвори">&times;</button>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img class="footer-mark" src="assets/img/logo.png" alt="" width="36" height="36" />
+        <div>
+          <div class="footer-title" data-i18n="brand_title">MOAI - Македонска олимпијада по Вештачка интелигенција</div>
+        </div>
+      </div>
+      <div class="footer-logos" aria-label="Partners">
+        <a class="footer-logo" href="https://mendo.mk/Welcome.do" target="_blank" rel="noreferrer">
+          <img src="assets/img/mendo.png" alt="MENDO" loading="lazy" decoding="async" />
+        </a>
+        <a class="footer-logo" href="https://cs.org.mk/" target="_blank" rel="noreferrer">
+          <img src="assets/img/zim.png" alt="ZIM" loading="lazy" decoding="async" />
+        </a>
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="https://github.com/dimitarmileski/MIG-AI-O" target="_blank" rel="noreferrer" data-i18n="footer_github">GitHub репозиториум</a>
+        <span class="muted" data-i18n="footer_updated">Ажурирано: 06 октомври 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Врати се на врв" title="Врати се на врв">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script>
+    (() => {
+      const translations = {
+        mk: {
+          page_title: "MOAI 2026 — Резултати и Галерија | Македонска олимпијада по Вештачка интелигенција",
+          page_desc: "Резултати, ранг листа и фото галерија од Македонската олимпијада по Вештачка интелигенција (MOAI 2026).",
+          skip_to_content: "Прескокни до содржина",
+          brand_title: "MOAI - Македонска олимпијада по Вештачка интелигенција",
+          nav_home: "Почетна",
+          nav_editions: "Изданија <svg class=\"dropdown-chevron\" viewBox=\"0 0 24 24\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>",
+          nav_international: "Меѓународни",
+          nav_prev_editions: "Претходни изданија",
+          nav_resources: "Ресурси",
+          breadcrumb_home: "Почетна",
+          breadcrumb_editions: "Изданија",
+          edition_badge_text: "🏆 Национално издание 2026",
+          edition_hero_title: "MOAI 2026",
+          edition_hero_lead: "Официјална ранг листа, наградени ученици и фото галерија од Македонската олимпијада по Вештачка интелигенција (MOAI 2026) за селекција на тимот за Меѓународната олимпијада по вештачка интелигенција (IAIO), одржана на <strong>1 февруари 2026</strong> на ФИНКИ, Скопје.",
+          stat_participants: "Учесници финалисти",
+          stat_gold: "🏆 Златен медал",
+          stat_silver: "🥈 Сребрени медали",
+          stat_bronze_mentions: "🥉 Бронзени / 🎉 Пофалби",
+          leaderboard_title: "Ранг листа (LeaderBoard 2026)",
+          leaderboard_subtitle: "Резултати и освоени награди од Македонската олимпијада по Вештачка интелигенција 2026.",
+          th_name: "Име",
+          th_surname: "Презиме",
+          th_school: "Средно училиште",
+          th_city: "Град",
+          th_points: "Поени",
+          th_award: "Награда",
+          leaderboard_detailed_results: "Детални резултати 📄",
+          gallery_full_title: "Фото галерија од MOAI 2026",
+          gallery_full_subtitle: "Моменти и атмосфера од натпреварот и доделувањето на наградите на ФИНКИ.",
+          dates_title: "Датуми и локација",
+          dates_subtitle: "Клучни информации за настаните.",
+          panel_mk_title: "Македонска селекција",
+          panel_mk_text: "Локален натпревар во <strong>Скопје</strong> за избор на тимот.<div class=\"panel-text\"><strong>Датум: 1 февруари 2026</strong><br /><strong>Време: 11:00ч</strong><br /><strong>Локација: Факултет за информатички науки и компјутерско инженерство (ФИНКИ), Универзитет „Св. Кирил и Методиј“ во Скопје</strong><br /></div>",
+          panel_iaio_title: "Меѓународна олимпијада по вештачка интелигенција (IAIO)",
+          panel_iaio_text: "<strong>23–27 февруари 2026</strong><br />Љубљана, Словенија",
+          other_ceoai_title: "Централно-европска олимпијада по вештачка интелигенција",
+          other_ceoai_info: "Клуж-Напока, Романија<br /><strong>14–19 јули 2026</strong>",
+          footer_github: "GitHub репозиториум",
+          footer_updated: "Ажурирано: 06 октомври 2026",
+          back_to_top: "Врати се на врв"
+        },
+        en: {
+          page_title: "MOAI 2026 — Results & Gallery | Macedonian Olympiad of Artificial Intelligence",
+          page_desc: "Results, leaderboard, and photo gallery from the Macedonian Olympiad of Artificial Intelligence (MOAI 2026).",
+          skip_to_content: "Skip to content",
+          brand_title: "MOAI - Macedonian Olympiad of Artificial Intelligence",
+          nav_home: "Home",
+          nav_editions: "Editions <svg class=\"dropdown-chevron\" viewBox=\"0 0 24 24\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>",
+          nav_international: "International",
+          nav_prev_editions: "Previous Editions",
+          nav_resources: "Resources",
+          breadcrumb_home: "Home",
+          breadcrumb_editions: "Editions",
+          edition_badge_text: "🏆 National Edition 2026",
+          edition_hero_title: "MOAI 2026",
+          edition_hero_lead: "Official leaderboard, awarded students, and photo gallery from the Macedonian Olympiad of Artificial Intelligence (MOAI 2026) to select the team for the International Artificial Intelligence Olympiad (IAIO), held on <strong>1 February 2026</strong> at FCSE, Skopje.",
+          stat_participants: "Finalist Participants",
+          stat_gold: "🏆 Gold Medal",
+          stat_silver: "🥈 Silver Medals",
+          stat_bronze_mentions: "🥉 Bronze / 🎉 Mentions",
+          leaderboard_title: "LeaderBoard 2026",
+          leaderboard_subtitle: "Results and awards from the Macedonian Olympiad of Artificial Intelligence 2026.",
+          th_name: "Name",
+          th_surname: "Surname",
+          th_school: "High School",
+          th_city: "City",
+          th_points: "Points",
+          th_award: "Award",
+          leaderboard_detailed_results: "Detailed results 📄",
+          gallery_full_title: "Photo Gallery MOAI 2026",
+          gallery_full_subtitle: "Moments and atmosphere from the competition and award ceremony at FCSE.",
+          dates_title: "Dates & location",
+          dates_subtitle: "Key event details.",
+          panel_mk_title: "Macedonian selection",
+          panel_mk_text: "Local competition in <strong>Skopje</strong> to select the team.<div class=\"panel-text\"><strong>Date: 1 February 2026</strong><br /><strong>Time: 11:00h</strong><br /><strong>Location: Faculty of Computer Science and Engineering (FCSE), Ss. Cyril and Methodius University of Skopje</strong><br /></div>",
+          panel_iaio_title: "International AI Olympiad (IAIO)",
+          panel_iaio_text: "<strong>23–27 February 2026</strong><br />Ljubljana, Slovenia",
+          other_ceoai_title: "Central European Olympiad in Artificial Intelligence",
+          other_ceoai_info: "Cluj-Napoca, Romania<br /><strong>14–19 July 2026</strong>",
+          footer_github: "GitHub repo",
+          footer_updated: "Updated: 06 October 2026",
+          back_to_top: "Back to top"
+        }
+      };
+
+      const awardLabels = {
+        mk: {
+          gold: '🏆 Златен',
+          silver: '🥈 Сребрен',
+          bronze: '🥉 Бронзен',
+          mention: '🎉 Пофалба'
+        },
+        en: {
+          gold: '🏆 Gold',
+          silver: '🥈 Silver',
+          bronze: '🥉 Bronze',
+          mention: '🎉 Honorable Mention'
+        }
+      };
+
+      const langSelect = document.getElementById('lang-select');
+      const backToTopBtn = document.getElementById('back-to-top');
+
+      function setLanguage(lang) {
+        const dict = translations[lang] || translations.mk;
+        document.documentElement.lang = lang;
+
+        if (dict.page_title) document.title = dict.page_title;
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && dict.page_desc) metaDesc.setAttribute('content', dict.page_desc);
+
+        if (backToTopBtn && dict.back_to_top) {
+          backToTopBtn.setAttribute('title', dict.back_to_top);
+          backToTopBtn.setAttribute('aria-label', dict.back_to_top);
+        }
+
+        // Update elements with textContent
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key] !== undefined) {
+            el.textContent = dict[key];
+          }
+        });
+
+        // Update elements with HTML content
+        document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+          const key = el.getAttribute('data-i18n-html');
+          if (dict[key] !== undefined) {
+            el.innerHTML = dict[key];
+          }
+        });
+
+        // Update award badges
+        const awards = awardLabels[lang] || awardLabels.mk;
+        document.querySelectorAll('[data-award]').forEach((el) => {
+          const awardType = el.getAttribute('data-award');
+          if (awards[awardType]) {
+            el.textContent = awards[awardType];
+          }
+        });
+
+        if (langSelect && langSelect.value !== lang) {
+          langSelect.value = lang;
+        }
+
+        try {
+          localStorage.setItem('iaio_preferred_lang', lang);
+        } catch (e) {}
+      }
+
+      // Initialize language
+      let initialLang = 'mk';
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get('lang');
+        const storedLang = localStorage.getItem('iaio_preferred_lang');
+        if (langParam && (langParam === 'mk' || langParam === 'en')) {
+          initialLang = langParam;
+        } else if (storedLang && (storedLang === 'mk' || storedLang === 'en')) {
+          initialLang = storedLang;
+        }
+      } catch (e) {}
+
+      if (langSelect) {
+        langSelect.addEventListener('change', (e) => {
+          setLanguage(e.target.value);
+        });
+      }
+
+      setLanguage(initialLang);
+
+      // Theme toggle functionality
+      const themeToggle = document.getElementById('theme-toggle');
+
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        try {
+          localStorage.setItem('iaio_theme', theme);
+        } catch (e) {}
+      }
+
+      let initialTheme = 'light';
+      try {
+        const storedTheme = localStorage.getItem('iaio_theme');
+        if (storedTheme === 'dark' || storedTheme === 'light') {
+          initialTheme = storedTheme;
+        }
+      } catch (e) {}
+
+      setTheme(initialTheme);
+
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          setTheme(newTheme);
+        });
+      }
+
+      // Back to top button
+      if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.add('is-visible');
+          } else {
+            backToTopBtn.classList.remove('is-visible');
+          }
+        }, { passive: true });
+
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // Lightbox functionality
+      const lightboxModal = document.getElementById('lightbox-modal');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxClose = document.getElementById('lightbox-close');
+
+      document.querySelectorAll('.gallery-grid-full .gallery-item').forEach((item) => {
+        item.addEventListener('click', () => {
+          const img = item.querySelector('img');
+          if (!img) return;
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt || '';
+          lightboxModal.classList.add('active');
+        });
+      });
+
+      function closeLightbox() {
+        lightboxModal.classList.remove('active');
+      }
+
+      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+      if (lightboxModal) {
+        lightboxModal.addEventListener('click', (e) => {
+          if (e.target === lightboxModal) closeLightbox();
+        });
+      }
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="x-apple-disable-message-reformatting" content="" />
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
-  <title>Macedonian Competition for IAIO — Newsletter</title>
+  <title>MOAI - Macedonian Olympiad of Artificial Intelligence — Newsletter</title>
   <style>
     /* Email-friendly styles (kept simple on purpose) */
     :root { color-scheme: dark; supported-color-schemes: dark; }
@@ -41,6 +41,61 @@
 
     .small { font-size: 12px; line-height: 18px; }
 
+    .back-to-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: #0b1020;
+      border: 1px solid #1b2550;
+      color: #e9ecff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(16px) scale(0.9);
+      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                  visibility 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                  background 0.2s ease,
+                  border-color 0.2s ease,
+                  color 0.2s ease;
+      z-index: 99;
+    }
+    .back-to-top.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0) scale(1);
+    }
+    .back-to-top:hover {
+      transform: translateY(-4px) scale(1.05);
+      border-color: #d20000;
+      color: #ffd23c;
+      background: #10162f;
+      box-shadow: 0 14px 34px rgba(210, 0, 0, 0.3);
+    }
+    .back-to-top svg {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.2s ease;
+    }
+    .back-to-top:hover svg {
+      transform: translateY(-2px);
+    }
+    @media (max-width: 768px) {
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+      }
+    }
+
     @media (prefers-color-scheme: light) {
       body { background: #ffffff; color: #0b1020; }
       .wrap { background: #ffffff; }
@@ -49,13 +104,15 @@
       .hr { background: #e6e8f5; }
       a { color: #b00000; }
       .btn-ghost { border-color: #b00000; color: #b00000 !important; }
+      .back-to-top { background: #ffffff; border-color: #e6e8f5; color: #0b1020; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1); }
+      .back-to-top:hover { background: #f4f5fc; border-color: #d20000; color: #d20000; }
     }
   </style>
 </head>
 <body>
   <!-- Preheader (hidden in most clients) -->
   <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">
-    Key dates (Skopje + Ljubljana), webinar links, and practice materials for the Macedonian Competition for IAIO.
+    Key dates (Skopje + Ljubljana), webinar links, and practice materials for the Macedonian Olympiad of Artificial Intelligence.
   </div>
 
   <table role="presentation" class="wrap" width="100%" cellpadding="0" cellspacing="0">
@@ -71,12 +128,11 @@
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                       <tr>
                         <td valign="middle" style="width: 52px; padding-right: 14px;">
-                          <img src="assets/img/logo.png" width="52" height="52" alt="Macedonian Competition for IAIO logo" style="border-radius: 12px;" />
+                          <img src="assets/img/logo.png" width="52" height="52" alt="Macedonian Olympiad of Artificial Intelligence logo" style="border-radius: 12px;" />
                         </td>
                         <td valign="middle">
                           <div class="kicker">Newsletter</div>
-                          <h1 class="title" style="margin: 2px 0 0;">Macedonian Competition for IAIO</h1>
-                          <p class="lead muted" style="margin: 6px 0 0;">Selection for the International Artificial Intelligence Olympiad (IAIO).</p>
+                          <h1 class="title" style="margin: 2px 0 0;">MOAI - Macedonian Olympiad of Artificial Intelligence</h1>
                         </td>
                       </tr>
                     </table>
@@ -97,10 +153,10 @@
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                       <tr>
                         <td align="left" style="padding-right: 10px; padding-bottom: 10px;">
-                          <a class="btn" href="index.html#guide">View the guide</a>
+                          <a class="btn" href="resources.html">View resources</a>
                         </td>
                         <td align="left" style="padding-bottom: 10px;">
-                          <a class="btn-ghost" href="index.html#resources">Open practice test</a>
+                          <a class="btn-ghost" href="resources.html#resources">Open practice test</a>
                         </td>
                       </tr>
                     </table>
@@ -208,7 +264,7 @@
                 <tr>
                   <td class="p-24">
                     <h2 class="h2">LeaderBoard</h2>
-                    <p class="lead muted" style="margin: 6px 0 0;">TBA after the Macedonian Competition for IAIO.</p>
+                    <p class="lead muted" style="margin: 6px 0 0;">TBA after the Macedonian Olympiad of Artificial Intelligence.</p>
                   </td>
                 </tr>
               </table>
@@ -264,7 +320,7 @@
                     <div style="height: 12px;"></div>
 
                     <p class="small muted" style="margin: 0;">
-                      Updated: 10 Jan 2025<br />
+                      Updated: 06 Oct 2026<br />
                       <span class="muted">Unsubscribe placeholder:</span> replace this line with your email platform’s unsubscribe link.
                     </p>
                   </td>
@@ -272,7 +328,7 @@
               </table>
 
               <div style="height: 16px;"></div>
-              <p class="small muted" style="margin: 0; text-align: center;">© Macedonian Competition for IAIO</p>
+              <p class="small muted" style="margin: 0; text-align: center;">© MOAI - Macedonian Olympiad of Artificial Intelligence</p>
 
             </td>
           </tr>
@@ -281,5 +337,30 @@
       </td>
     </tr>
   </table>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script>
+    (() => {
+      const backToTopBtn = document.getElementById('back-to-top');
+      if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.add('is-visible');
+          } else {
+            backToTopBtn.classList.remove('is-visible');
+          }
+        }, { passive: true });
+
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
